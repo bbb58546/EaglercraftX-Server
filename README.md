@@ -5,8 +5,6 @@ Original Project: Lax1Dude
 <br>
 Original Server Fork: EcoliEater87
 <br>
-Docker Fork: CaenJones
-<br>
 ## Setup Guide
 Welcome to the EaglercraftX server project! Here is how you can setup your very own eaglercraft server:
 <br>
