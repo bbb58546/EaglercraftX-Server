@@ -1,8 +1,7 @@
 #!/bin/bash
-
 # ~~~ EaglercraftX Server
 # ~~~ >> smashed together once again by ayunami2000
-# ~~~ >> uwu
+# ~~~ >> modified by WinRAR
 
 unset DISPLAY
 
@@ -26,18 +25,15 @@ if [ ! -d "eaglercraftx" ]; then
   FORCE1="bruh"
 fi
 
-# ~~~
-# BY MODIFYING THE BELOW TEXT, YOU ARE BEING A PRICK
-# ~~~
-if ! grep -q "^eula=$REPL_OWNER/$REPL_SLUG\$" "eula.txt"; then
+if ! grep -q "eula=true" "eula.txt"; then
   rm eula.txt
   java -jar LicensePrompt.jar
-  echo "eula=$REPL_OWNER/$REPL_SLUG" > eula.txt
+  echo "eula=true" > eula.txt
 fi
 # ~~~
 
 # reset stuff
-if [ -f "base.repl" ] && ! { [ "$REPL_OWNER" == "ayunami2000" ] && [ "$REPL_SLUG" == "eaglercraftx" ]; }; then
+if grep -q "reset=true" "reset.txt"; then
   rm base.repl
   rm -rf server/world
   rm -rf server/world_nether
@@ -73,7 +69,7 @@ REMOTEHASH=$(git rev-parse @{u})
 if [ "$LOCALHASH" != "$REMOTEHASH" ] || [ $FORCE1 == "bruh" ]; then
   cd ..
   rm -rf eaglercraftx
-  git clone https://gitlab.com/lax1dude/eaglercraftx-1.8 eaglercraftx --depth 1
+  git clone https://github.com/WINRARisyou/EaglercraftX eaglercraftx --depth 1
   mkdir eaglercraftx
   cd eaglercraftx
 fi
@@ -134,16 +130,18 @@ cd ..
 
 # run it!!
 cd bungee
-tmux new -d -s server "java -Xmx128M -jar bungee.jar"
+tmux new -d -s server "java -Xmx128M -jar bungee.jar; tmux kill-session -t server"
 cd ../server
 if [ ! -f "server.jar" ] && [ -d "../cuberite" ]; then
   cd ../cuberite
-  tmux splitw -t server -v "BIND_ADDR=127.0.0.1 LD_PRELOAD=../bindmod.so ./Cuberite"
+  tmux splitw -t server -v "BIND_ADDR=127.0.0.1 LD_PRELOAD=../bindmod.so ./Cuberite; tmux kill-session -t server"
 else
-  tmux splitw -t server -v "java -Djline.terminal=jline.UnsupportedTerminal -Xmx512M -jar server.jar nogui"
+  tmux splitw -t server -v "java -Djline.terminal=jline.UnsupportedTerminal -Xmx512M -jar server.jar nogui; tmux kill-session -t server"
 fi
 cd ..
 while tmux has-session -t server
 do
   tmux a -t server
 done
+
+echo 'you might need to agree to the EULA in the server folder'

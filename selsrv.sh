@@ -1,4 +1,5 @@
 #!/bin/bash
+exit
 SRV=$(dialog --menu "Choose a server software:\n(or cancel for no change)\nUse arrow keys and enter to select:" 12 40 3 1 "Paper 1.8.8 (recommended)" 2 "nPaper 1.7 (faster)" 3 "Cuberite (fastest)" --output-fd 1)
 
 clear
