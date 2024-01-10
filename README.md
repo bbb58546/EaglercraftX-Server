@@ -33,4 +33,4 @@ Your eaglercraft server is setup!
 NOTE: to have the docker image run correctly you need to have the `docker-compose` package installed as well as `git`. you also need to have ports `8081` and `8080` unused.
 <br>
 <br>
-`git clone https://github.com/CaenJones/EaglercraftX-Server.git && cd EaglercraftX-Server && docker-compose up`
+```git clone https://github.com/CaenJones/EaglercraftX-Server.git && cd EaglercraftX-Server && docker-compose up```
