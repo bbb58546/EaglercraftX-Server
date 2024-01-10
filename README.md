@@ -1,11 +1,11 @@
-#EaglerCraftX Server
+# EaglerCraftX Server
 
-##Credits
+## Credits
 Original Project: Lax1Dude
 Original Server Fork: EcoliEater87
 Docker Fork: CaenJones
 
-##Setup Guide
+## Setup Guide
 Welcome to the EaglercraftX server project! Here is how you can setup your very own eaglercraft server:
 <br>
 First, go to the top of the repo and click on code > codespaces > create codespace
@@ -23,5 +23,5 @@ Now go to the ports area and forward (and make public) ports `25565` and `8081`
 <br>
 Your eaglercraft server is setup!
 
-##Docker Image
+## Docker Image
 comming soon...
