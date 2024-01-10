@@ -2,7 +2,7 @@
 
 ## Credits
 Original Project: Lax1Dude
-<br
+<br>
 Original Server Fork: EcoliEater87
 <br>
 Docker Fork: CaenJones
