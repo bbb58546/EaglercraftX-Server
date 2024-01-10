@@ -1,1 +1,20 @@
+   FROM ubuntu:latest
 
+   RUN apt-get update && \
+       apt-get install -y tmux git default-jdk wget && \
+       rm -rf /var/lib/apt/lists/*
+       
+   version: '3'
+   services:
+     myservice:
+       build: .
+       volumes:
+         - .:/home/
+       working_dir: /home/
+       command: >
+         bash -c "git clone https://github.com/CaenJones/EaglercraftX-Server.git;
+                  cd EaglercraftX-Server/server;
+                  java -jar server.jar;
+                  cd ..;
+                  cd bungee;
+                  java -jar bungee.jar;"
