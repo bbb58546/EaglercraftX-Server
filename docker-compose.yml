@@ -8,6 +8,8 @@
    services:
      myservice:
        build: .
+       ports:
+        - '8081:8080'
        volumes:
          - .:/home/
        working_dir: /home/
