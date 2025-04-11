@@ -1,0 +1,143 @@
+language:
+  actions:
+    blockbreaking: breaking a block
+    blockplacing: placing a block
+    command: trying to use a command
+    croptrampling: trampling crops
+    interactionblocks: interacting with a block
+    interactionitems: interacting with an item
+    moving: trying to escape
+  confirm:
+    already: '&cYou are already confirming something else, please type ''&b/jail confirm&c''
+      to confirm it.'
+    expired: '&cYour confirmation expired already, retype what you are trying to confirm.'
+    nothing: '&cYou are not confirming anything.'
+    start: '&cPlease type ''&b/jail confirm&c'' to confirm we should continue.'
+  general:
+    alljails: all the jails
+    cellemptysign: Empty cell
+    cellremovalunsuccessful: '&cThe removal of cell %0% from jail %1% was unsuccessful
+      because there is a prisoner in there still. Release or transfer before trying
+      to remove the cell again.'
+    cellremoved: '&9Cell %0% has been successfully removed from the jail %1%.'
+    jailedforeversign: '&cfor life'
+    jailing: '&9jailing'
+    jailremovalunsuccessful: '&cThe removal of the jail %0% was unsuccessful because
+      there are prisoners in there, please release or transfer them first.'
+    jailremoved: '&9Jail %0% has been successfully deleted.'
+    jailstickdisabled: '&3Jail stick usage: &cdisabled'
+    jailstickenabled: '&3Jail stick usage: &aenabled'
+    jailstickusagedisabled: '&cThe usage of Jail Sticks has been disabled by the Administrator.'
+    nocell: '&cNo cell found by the name of %0% in the jail %1%.'
+    nocells: '&cNo cells found in the jail %0%.'
+    nojail: '&cNo jail found by the name of %0%.'
+    nojails: '&cThere are currently no jails.'
+    nopermission: '&cInsufficient permission.'
+    numberformatincorrect: '&cNumber format is incorrect.'
+    playercontextrequired: '&cA player context is required for this.'
+    playernotonline: '&cThat player is not online!'
+    pluginnotloaded: '&cThe plugin did not load correctly, tell the administrator
+      to check the console for errors.'
+    pluginreloaded: '&9Jail data successfully reloaded.'
+    prisonerscleared: '&cAll the prisoners from %0% have been cleared.'
+    recordentry: '&7[%0%]: &9%1% &fjailed by &9%2% &ffor &9%3% &fminutes with a reason
+      of &9%4%&f. [%5%]'
+    recordtimesjailed: '&c%0% has been jailed &a%1% &ctimes.'
+    timeformat: MM/dd/yyyy HH:mm:ss
+    transferring: '&9transferring'
+    unknowncommand: '&cNo commands registered by the name of %0%.'
+  jailing:
+    afkkickmessage: '&cYou can not be afk while being jailed.'
+    alreadyjailed: '&c%0% is already jailed.'
+    broadcastmessageforever: '&9%0% has been jailed forever.'
+    broadcastmessageforminutes: '&9%0% has been jailed for %1% minutes.'
+    broadcastunjailing: '&9%0% has been unjailed by %1%.'
+    cancelledbyanotherplugin: '&cJailing %0% was cancelled by another plugin and they
+      did not leave you a message.'
+    cantbejailed: '&cThat player can not be jailed.'
+    cellnotempty: '&cThe destination cell, %0%, already has a prisoner in it.'
+    defaultjailedreason: Breaking the rules.
+    forceunjailed: '&c%0% was forcefully unjailed.'
+    jailed: '&cYou have been jailed!'
+    jailedwithreason: '&cYou have been jailed for: %0%'
+    muted: '&cStop talking, you are in jail.'
+    noemptycells: '&cNo empty cells were found for %0%, all them appear to be full.'
+    noprisoners: '&9%0% is empty and contains no prisoners.'
+    notjailed: '&c%0% is not jailed.'
+    nowmuted: '&9%0% is now muted.'
+    nowunmuted: '&9%0% is now unmuted.'
+    offlinejail: '&2%0% is offline and will be jailed when they next come online for
+      %1% minutes.'
+    onlinejail: '&2%0% was jailed for %1% minutes.'
+    prisonerstime: '&2%0% has %1% minutes remaining.'
+    protectionmessage: '&c%0% minutes have been added to your time for %1%.'
+    protectionmessagenopenalty: '&cProtection enabled for %0%, do not do it again.'
+    provideaplayer: '&cPlease provide a player when %0% &cthem.'
+    provideajail: '&cPlease provide a jail to %0% &cthem to.'
+    resistedarrestjailer: '&c%0% has resisted arrest thanks to having more health
+      than you can jail at.'
+    resistedarrestplayer: '&cYou have resisted arrest due to having more health than
+      %0% can jail at.'
+    status: '&2You have been jailed with a reason of ''%0%'' by %1% and have %2% minutes
+      remaining (%3%).'
+    suggestedcell: '&cAn empty cell in the same jail, %0%, was found: %1%'
+    telein: '&9Teleported %0% to %1%''s teleport in location.'
+    teleout: '&9Teleported %0% to %1%''s teleport out location.'
+    transferallcomplete: '&2Successfully transferred all the prisoners from %0% to
+      %1%.'
+    transfercancelledbyanotherplugin: '&cTransferring %0% was cancelled by another
+      plugin and they did not leave you a message.'
+    transfercompletecell: '&2Successfully transferred %0% to %1% in the cell %2%.'
+    transfercompletenocell: '&2Successfully transferred %0% to %1%.'
+    transferred: '&9You have been transferred to %0%.'
+    unjailed: '&2You have been released! Please respect the server rules.'
+    unjailsuccess: '&2%0% has been released from jail.'
+    willbeunjailed: '&2%0% will be released the next time they log on.'
+    worldunloaded: '&4%0% is located in a world that is not loaded, jailing to it
+      is disabled.'
+    worldunloadedkick: '&4You are jailed in a jail that is located in a world which
+      is currently unloaded, try again later.'
+    youarenotjailed: '&2You are not jailed.'
+  jailpay:
+    cantpayforotherswhilejailed: '&cYou are jailed and as a result you can not pay
+      for others.'
+    cost: '&9You have to pay %0% %1% per minute which equates to %2% %1%.'
+    costinfinite: '&9Since you are jailed forever, you have to pay %0% %1%.'
+    nonegativeamounts: '&cYou can not pay negative amounts.'
+    notenabled: '&cSorry, money won''t help this time.'
+    notenoughmoney: '&cYou don''t have that much money!'
+    notenoughmoneyprovided: '&cYou have not provided enough money to cover the sentence!'
+    paidreleased: '&2You have just payed %0% and released yourself from jail!'
+    paidreleasedelse: '&2You have just payed %0% and released %1% from jail!'
+    paidloweredtime: '&2You have just payed %0% and lowered your sentence to %1% minutes!'
+    paidloweredtimeelse: '&2You have just payed %0% and lowered %1%''s sentence to
+      %2% minutes!'
+  jailvote:
+    broadcast:
+      header: '&3------------- Jail ------------'
+      line1: '&a%0% &bhas voted that &c%1% &bshould be jailed.'
+      line2: '&6Type &a/jail vote %0% yes &6if you agree'
+      line3: '&6or type &a/jail vote %0% no &6if you disagree.'
+      line4: '&bThis vote will be open for %0%!'
+      footer: '&3-----------------------------'
+    novotegoingforthatplayer: '&cThere is currently no vote running to jail %0%.'
+    nopermissiontostartvote: '&cYou don''t have permission to start a vote to jail
+      %0%.'
+    notenabled: '&cJail vote is disabled by the administrator.'
+    voteunsuccessful: '&cYour vote to jail someone was unsuccessful, you already voted.'
+    votenosuccessful: '&aYou successfully voted for %0% to &cnot&a be jailed!'
+    voteyessuccessful: '&aYou successfully voted for %0% to be jailed!'
+    votestied: '&cThe votes were tied, %0% was not jailed.'
+    morenovotes: '&cThere were more votes for no, %0% was not jailed.'
+    notenoughyes: '&cThe voting to jail %0% was not successful, %1% out of a minimum
+      %2% yes votes were received.'
+    playernolongeronline: '&cThe player %0% is no longer online, player not jailed.'
+    alreadyvotedfor: '&cYou have already voted for %0%, you can''t vote again.'
+  handcuffing:
+    cantbehandcuffed: '&9%0% &ccan not be handcuffed.'
+    currentlyjailed: '&9%0% &cis currently jailed, you can not handcuff a prisoner.'
+    nothandcuffed: '&9%0% &cdoes not have any handcuffs to remove!'
+    handcuffson: '&9%0% &ahas been handcuffed!'
+    handcuffed: '&cYou have been handcuffed.'
+    handcuffsreleased: '&9%0% &ahas been released from their handcuffs.'
+    unhandcuffed: '&aYour handcuffs have been removed.'

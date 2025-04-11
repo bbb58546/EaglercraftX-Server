@@ -1,0 +1,116 @@
+# ###################
+# Jail v3.0.0-SNAPSHOT-b182 config file
+# Note: You -must- use spaces instead of tabs!
+# ###################
+system:
+  version: 3
+  debug: false
+  language: en
+  updates:
+    channel: bukkit
+    notification: true
+    time: 1h
+  useBukkitTimer: true
+storage:
+  type: flatfile
+  mysql:
+    host: localhost
+    port: 3306
+    username: root
+    password: password
+    database: jailDatabase
+    prefix: j3_
+jailing:
+  during:
+    blockBreakPenalty: 5m
+    blockBreakProtection: true
+    blockBreakWhiteList:
+    - crops
+    - carrot
+    - potato
+    blockPlacePenalty: 5m
+    blockPlaceProtection: true
+    blockPlaceWhiteList:
+    - crops
+    - carrot
+    - potato
+    cellsign:
+    - '%player%'
+    - '%timeinminutes% mins'
+    - with a reason
+    - '%reason%'
+    commandPenalty: 5m
+    commandProtection: true
+    commandWhitelist:
+    - /ping
+    - /list
+    - /jail status
+    - /jail pay
+    countDownTimeWhileOffline: false
+    cropTramplingPenalty: 5m
+    cropTramplingProtection: true
+    foodControl:
+      enabled: true
+      max: 20
+      min: 10
+    ignoreSleeping: true
+    maxAFKTime: 10m
+    movePenalty: 10m
+    moveProtection: true
+    openChest: true
+    preventInteractionBlocks:
+    - wooden_door
+    - iron_door_block
+    preventInteractionBlocksPenalty: 5m
+    preventInteractionItems: []
+    preventInteractionItemsPenalty: 5m
+    recieveMessages: true
+    scoreboard:
+      enabled: false
+      title: Jail Info
+      time: '&aTime:'
+  jail:
+    automaticCell: true
+    automaticMute: true
+    broadcastJailing: false
+    clothing:
+      enabled: true
+      helmet: leather_helmet~175,105,33
+      chest: leather_chestplate~175,105,33
+      legs: leather_leggings~175,105,33
+      boots: leather_boots~175,105,33
+    commands: []
+    default:
+      jail: nearest
+      time: 30m
+    gameMode: adventure
+    inventory:
+      blacklist: []
+      store: true
+    log:
+      console: true
+      profile: true
+  release:
+    backToPreviousPosition: false
+    commands: []
+    restorePreviousGameMode: false
+    teleport: true
+jails:
+  endermenProtection: true
+  explosionProtection: true
+jailpay:
+  enabled: true
+  item: air
+  pricePerMinute: 1.5
+  priceInfinite: 10000
+jailstick:
+  enabled: true
+  sticks:
+  - stick,30m,,Running away,-1
+  - blaze_rod,15m,,Having too much fun,6
+jailvote:
+  enabled: true
+  voteTimer: 60s
+  minimumYes: 5
+  reason: Jailed by players via Jail Vote
+  time: 5m

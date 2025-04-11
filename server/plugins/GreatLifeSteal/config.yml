@@ -1,0 +1,226 @@
+# A section for the plugin operation.
+# 1 heart = 2 health points.
+baseSettings:
+    # Amount of maximum health points that will be given to the new player that did not play before.
+    defaultHealth: 20.0
+    # Minimum amount of health points a player can have.
+    minimumHealth: 2.0
+    # Maximum amount of health points a player can have.
+    maximumHealth: 75.0
+    # Health points will be changed only if the player was killed by the other player.
+    killByPlayerOnly: true
+    # If players with same ip address should be prevented from gaining health points.
+    # This option can prevent from farming health points via multi accounts on a single device.
+    ignoreSameIp: true
+    # Define what list of actions should happen if a player reaches specific amount of maximum health points.
+    # 
+    # If the action should be enabled.
+    # enabled: false
+    # 
+    # Action type that should be done on reaching health points goal.
+    # If you are using SPECTATOR_MODE, switch to DISPATCH_COMMANDS instead because the previous action is
+    # deprecated and will be removed in the future.
+    #  DISPATCH_COMMANDS - execute a list of commands as a console.
+    #  BROADCAST - broadcast a message that is specified in the parameters list.
+    #  BAN - bans a player with a specified message (you should use DISPATCH_COMMANDS for custom punishments)
+    # type: DISPATCH_COMMANDS
+    # 
+    # Amount of health points that are needed to execute the action.
+    # activateAtHealth: 4
+    # 
+    # Delay in ticks after which the action should be executed.
+    # Very low values such as 0 or 1 may lead to performance issues, so choose wisely.
+    # 20 ticks = 1 second.
+    # delay: 5
+    # 
+    # List of parameters that are adequate to the chosen action.
+    #  DISPATCH_COMMANDS - list of commands.
+    #  BROADCAST - list of messages.
+    #  BAN - list of lines for ban reason.
+    # Placeholders:
+    #  {killer} - represents killer username, or last damage cause (if killByPlayerOnly not active)
+    #  {victim} - represents victim username
+    #  {killer_max_health} - represents killer's max health
+    #  {victim_max_health} - represents victim's max health
+    # parameters:
+    # - gamemode spectator {victim}
+    # 
+    # Specify whether or not you want to have a revive available for that action.
+    # If enabled, the commands will be executed after a revive execution.
+    # For example, if the action is a ban command, you can provide an unban command for the revive.
+    # Allowed action types that works with the revive system: DISPATCH_COMMANDS
+    # revive:
+    #   If the revive for this action should be enabled.
+    #   enabled: true
+    # 
+    #   List of commands that should be executed after a revive execution.
+    #   For the BAN action type 'commands' are not used because the elimination is removed internally.
+    #   Allowed action types that works with revive commands: DISPATCH_COMMANDS
+    #   Placeholders:
+    #   {victim} - represents victim username
+    #   commands:
+    #   - unban {victim}
+    customActions:
+        announce:
+            enabled: true
+            type: BROADCAST
+            activateAtHealth: 4.0
+            delay: 5
+            parameters: 
+            - '&aPlayer &e{victim} ({victim_max_health} hp) &ahas been eliminated by &e{killer}
+              ({killer_max_health} hp)&a.'
+            revive:
+                enabled: false
+                commands: []
+        spectate:
+            enabled: true
+            type: DISPATCH_COMMANDS
+            activateAtHealth: 4.0
+            delay: 5
+            parameters: 
+            - gamemode spectator {victim}
+            revive:
+                enabled: true
+                commands: []
+        eliminatePerm:
+            enabled: false
+            type: BAN
+            activateAtHealth: 4.0
+            delay: 5
+            parameters: 
+            - '&cYou have been eliminated!'
+            revive:
+                enabled: true
+                commands: []
+        eliminateTemp:
+            enabled: false
+            type: DISPATCH_COMMANDS
+            activateAtHealth: 4.0
+            delay: 5
+            parameters: 
+            - tempban {victim} 7d
+            revive:
+                enabled: true
+                commands: 
+                - unban {victim}
+    # Specify if life steal cooldown should be enabled and how long should it last.
+    # Killers will not be able to take hearts from victims unless a cooldown time expires.
+    stealCooldown:
+        # If the life steal cooldown should be enabled on the server.
+        enabled: true
+        # Cooldown time in seconds.
+        cooldown: 30
+    # Item that can be used by a player to give him a specified amount of health points.
+    heartItem:
+        # If any heart item should be enabled on the server.
+        enabled: true
+        # Amount of health points that should be given to a player on item consume.
+        healthAmount: 2.0
+        # Upper maximum health limit for healing with the heart item.
+        maximumHealthLimit: 20.0
+        # Type of the item that the heart item should be.
+        type: APPLE
+        # If heart items should be dropped on a ground if they did not fit in the inventory.
+        dropOnGround: true
+        # Recipe for the heart item creation. Each number is an ordered slot in the workbench (1-9).
+        crafting:
+            '1':
+                type: DIAMOND_BLOCK
+                amount: 1
+            '2':
+                type: DIAMOND_BLOCK
+                amount: 1
+            '3':
+                type: DIAMOND_BLOCK
+                amount: 1
+            '4':
+                type: DIAMOND_BLOCK
+                amount: 1
+            '5':
+                type: DIAMOND_BLOCK
+                amount: 1
+            '6':
+                type: DIAMOND_BLOCK
+                amount: 1
+            '7':
+                type: DIAMOND_BLOCK
+                amount: 1
+            '8':
+                type: DIAMOND_BLOCK
+                amount: 1
+            '9':
+                type: DIAMOND_BLOCK
+                amount: 1
+        # Meta for the heart item.
+        meta:
+            # Display name for the item.
+            displayName: '&aHeart'
+            # Lore for the item.
+            lore: 
+            - '&aUse this item to give yourself health points.'
+        # Specify when the heart item should be dropped.
+        drop:
+            # If the heart item should be dropped on a maximum health limit exceed.
+            onLimitExceed: true
+            # If the heart item should be dropped on an every kill for a killer instead of increasing his maximum health automatically.
+            onEveryKill: true
+    # Amount of health points revoked when a player was killed or awarded when a kill was scored.
+    # If you want to disable the life steal system for a killer or a victim just set their health change to 0.
+    healthChange:
+        # How much health points should be taken from a victim.
+        victim: 2.0
+        # How much health points should be given to a killer.
+        killer: 2.0
+    # Specify in what worlds should each system be disabled or where it will not affect anything.
+    disabledWorlds:
+        # Specify in what worlds should gaining/losing health be disabled.
+        healthChange: 
+        - custom_world
+        # Specify in what worlds should eliminations be disabled.
+        # Example: Eliminated player X from world Y can access world Z if it is listed here.
+        eliminations: 
+        - custom_world_2
+# All messages that can be sent by the plugin to players.
+# If you want to prevent from displaying a specific message, just replace the value with ''.
+messages:
+    commandUsage: |-
+      &a&lAvailable commands:
+      &7/&alifesteal reload &8- &eReloads the plugin.
+      &7/&alifesteal lives <action> [player] &8- &eShows the health points for the player.
+      &7/&alifesteal withdraw <hearts> [player] &8- &eWithdraws hearts as items.&7/&alifesteal health add <player> <health_points> &8- &eAdds the health points to the player.
+      &7/&alifesteal health remove <player> <health_points> &8- &eSubtracts the health points from the player.
+      &7/&alifesteal health set <player> <health_points> &8- &eSets the health points for the player.
+      &7/&alifesteal eliminate <action> <player> &8- &eEliminates the player through the specified action.
+      &7/&alifesteal revive <action> <player> &8- &eRevives the player for the specified action.
+    noPermissions: '&cYou don''t have enough permissions.'
+    successfulCommandAdd: '&aYou have successfully added &e{HEALTH} &ahp to &e{PLAYER}&a.'
+    successfulCommandRemove: '&aYou have successfully subtracted &e{HEALTH} &ahp from &e{PLAYER}&a.'
+    successfulCommandSet: '&aYou have successfully set &e{HEALTH} &ahp for &e{PLAYER}&a.'
+    successfulCommandLives: '&aPlayer &e{PLAYER} &ahas &e{LIVES} lives &aleft.'
+    successfulCommandWithdraw: '&aPlayer &e{PLAYER} &ahas been given &e{HEARTS}&ax hearts.'
+    notEnoughHealthWithdraw: '&cYou cannot withdraw more hearts than you already have.'
+    notEnoughPlaceInventory: '&cYou do not have enough place in the inventory.'
+    noActionEnabled: '&cEnable at least one action in the configuration.'
+    actionTypeInvalid: '&cSpecified action does not match the requirements.'
+    noActionSpecified: '&cYou need to specify a type of an action.'
+    eliminationPresent: '&cPlayer {PLAYER} is already eliminated.'
+    noEliminationPresent: '&cPlayer {PLAYER} is not eliminated.'
+    successfulCommandReload: '&aPlugin has been successfully reloaded.'
+    failCommandReload: '&cCould not reload the plugin.'
+    failCommandEliminate: '&cCould not create the elimination.'
+    successDefaultHealthSet: '&aYou have been successfully revived.'
+    failDefaultHealthSet: '&cCould not set a default maximum health for you.'
+    invalidPlayerProvided: '&cYou have provided invalid player.'
+    invalidHealthProvided: '&cYou have provided invalid health number.'
+    noNumberSpecified: '&cYou need to specify a number.'
+    invalidNumberProvided: '&cYou have provided an invalid number.'
+    positiveNumberRequired: '&cYou need to provide a number higher than 0.'
+    maxHealthReached: '&cYou have reached the maximum amount of health points.'
+    stealCooldownActive: '&cYou can''t steal hearts from this player for another &e{AMOUNT} seconds&c.'
+    pluginOutdated: '&7(&eGLifeSteal&7) &aNew update came out! https://www.spigotmc.org/resources/greatlifesteal.102206/.'
+# A section for the data source configuration.
+dataSource:
+    # A type of the data source that should be used. Available: SQLITE
+    type: SQLITE
+    # A file name for the SQLite data source.
+    sqliteFile: gls.db

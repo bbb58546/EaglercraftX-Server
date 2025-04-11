@@ -1,0 +1,24 @@
+#
+# SetLobby by EzrealHD
+#
+############
+## Config ##
+############
+JOIN_INFO: true
+COOLDOWN: 3
+COOLDOWN_ENABLED: true
+##############
+## Messages ##
+##############
+setlobby: (§c§lSet§a§lLobby§8) §eLobby §4set!
+lobby: §3Welcome §5to §2lobby!
+#############
+## Effects ##
+#############
+MOBSPAWNER_FLAMES: true
+############
+## Sounds ##
+############
+LEVEL_UP: true
+PORTAL_TRAVEL: false
+ENDERDRAGON_DEATH: false

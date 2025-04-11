@@ -1,0 +1,904 @@
+[04:55:17] [Server thread/INFO]: Starting minecraft server version 1.8.8
+[04:55:17] [Server thread/INFO]: Loading properties
+[04:55:17] [Server thread/INFO]: Default game type: SURVIVAL
+[04:55:17] [Server thread/INFO]: This server is running CraftBukkit version git-PaperSpigot-445 (MC: 1.8.8) (Implementing API version 1.8.8-R0.1-SNAPSHOT)
+[04:55:17] [Server thread/INFO]: Debug logging is disabled
+[04:55:17] [Server thread/INFO]: Spigot Timings: true - Verbose: true - Interval: 5m - Length: 60m
+[04:55:17] [Server thread/INFO]: Server Ping Player Sample Count: 12
+
+[04:55:17] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:55:17] [Server thread/INFO]: Data value allowed items: 
+[04:55:17] [Server thread/WARN]: java.lang.NoSuchFieldException: modifiers
+
+[04:55:17] [Server thread/WARN]: 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+
+[04:55:17] [Server thread/WARN]: 	at org.github.paperspigot.PaperSpigotConfig.stackableBuckets(PaperSpigotConfig.java:192)
+
+[04:55:17] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+
+[04:55:17] [Server thread/WARN]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+[04:55:17] [Server thread/WARN]: 	at org.github.paperspigot.PaperSpigotConfig.readConfig(PaperSpigotConfig.java:84)
+
+[04:55:17] [Server thread/WARN]: 	at org.github.paperspigot.PaperSpigotConfig.init(PaperSpigotConfig.java:62)
+
+[04:55:17] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:181)
+
+[04:55:17] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:563)
+
+[04:55:17] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[04:55:17] [Server thread/INFO]: Generating keypair
+[04:55:18] [Server thread/INFO]: Starting Minecraft server on localhost:25565
+[04:55:18] [Server thread/INFO]: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+[04:55:18] [Server thread/INFO]: Using default channel type
+[04:55:18] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[04:55:18] [Server thread/INFO]: [ClearLag] Loading ClearLag v3.2.2
+[04:55:18] [Server thread/INFO]: [SimpleTpa] Loading SimpleTpa v6.4
+[04:55:18] [Server thread/INFO]: [SimpleHomes] Loading SimpleHomes v2.2
+[04:55:18] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1;no_git_id
+[04:55:18] [Server thread/INFO]: [AdvancedBan] Loading AdvancedBan v2.1.5-RELEASE
+[04:55:18] [Server thread/INFO]: [SetLobby] Loading SetLobby v0.8
+[04:55:18] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
+[04:55:18] [Server thread/INFO]: [GreatLifeSteal] Loading GreatLifeSteal v1.7
+[04:55:18] [Server thread/INFO]: [TAB] Loading TAB v5.0.1
+[04:55:18] [Server thread/INFO]: [Jail] Loading Jail v3.0.0-SNAPSHOT-b182
+[04:55:18] [Server thread/INFO]: [Essentials] Loading Essentials v2.19.7
+[04:55:18] [Server thread/INFO]: [AuthMe] Loading AuthMe v5.6.0-SNAPSHOT-bCUSTOM
+[04:55:18] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[04:55:18] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[04:55:18] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[04:55:18] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[04:55:18] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[04:55:18] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[04:55:18] [Server thread/WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[04:55:18] [Server thread/WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
+[04:55:18] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[04:55:18] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[04:55:18] [Server thread/INFO]: Preparing level "world"
+[04:55:18] [Server thread/INFO]: -------- World Settings For [world] --------
+[04:55:18] [Server thread/INFO]: Mob Spawn Range: 4
+[04:55:18] [Server thread/INFO]: Anti X-Ray: true
+[04:55:18] [Server thread/INFO]: 	Engine Mode: 1
+[04:55:18] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[04:55:18] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[04:55:18] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[04:55:18] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Cane Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Melon Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[04:55:18] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[04:55:18] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[04:55:18] [Server thread/INFO]: Random Lighting Updates: false
+[04:55:18] [Server thread/INFO]: Structure Info Saving: true
+[04:55:18] [Server thread/INFO]: Sending up to 10 chunks per packet
+[04:55:18] [Server thread/INFO]: Max Entity Collisions: 8
+[04:55:18] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[04:55:18] [Server thread/INFO]: Max TNT Explosions: 100
+[04:55:18] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[04:55:18] [Server thread/INFO]: Item Despawn Rate: 6000
+[04:55:18] [Server thread/INFO]: Item Merge Radius: 2.5
+[04:55:18] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[04:55:18] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[04:55:18] [Server thread/INFO]: View Distance: 4
+[04:55:18] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[04:55:18] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[04:55:18] [Server thread/INFO]: Clear tick list: false
+[04:55:18] [Server thread/INFO]: Experience Merge Radius: 3.0
+[04:55:18] [Server thread/INFO]: -------- World Settings For [world] --------
+[04:55:18] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[04:55:18] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[04:55:18] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[04:55:18] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[04:55:18] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[04:55:18] [Server thread/INFO]: Water over lava flow speed: 5
+[04:55:18] [Server thread/INFO]: Fix TNT cannons: false
+[04:55:18] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[04:55:18] [Server thread/INFO]: Keep spawn chunk loaded: true
+[04:55:18] [Server thread/INFO]: World async lighting: false
+[04:55:18] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[04:55:18] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[04:55:18] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[04:55:18] [Server thread/INFO]: Mob Spawn Range: 4
+[04:55:18] [Server thread/INFO]: Anti X-Ray: true
+[04:55:18] [Server thread/INFO]: 	Engine Mode: 1
+[04:55:18] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[04:55:18] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[04:55:18] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[04:55:18] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Cane Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Melon Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[04:55:18] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[04:55:18] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[04:55:18] [Server thread/INFO]: Random Lighting Updates: false
+[04:55:18] [Server thread/INFO]: Structure Info Saving: true
+[04:55:18] [Server thread/INFO]: Sending up to 10 chunks per packet
+[04:55:18] [Server thread/INFO]: Max Entity Collisions: 8
+[04:55:18] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[04:55:18] [Server thread/INFO]: Max TNT Explosions: 100
+[04:55:18] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[04:55:18] [Server thread/INFO]: Item Despawn Rate: 6000
+[04:55:18] [Server thread/INFO]: Item Merge Radius: 2.5
+[04:55:18] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[04:55:18] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[04:55:18] [Server thread/INFO]: View Distance: 4
+[04:55:18] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[04:55:18] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[04:55:18] [Server thread/INFO]: Clear tick list: false
+[04:55:18] [Server thread/INFO]: Experience Merge Radius: 3.0
+[04:55:18] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[04:55:18] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[04:55:18] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[04:55:18] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[04:55:18] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[04:55:18] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[04:55:18] [Server thread/INFO]: Water over lava flow speed: 5
+[04:55:18] [Server thread/INFO]: Fix TNT cannons: false
+[04:55:18] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[04:55:18] [Server thread/INFO]: Keep spawn chunk loaded: true
+[04:55:18] [Server thread/INFO]: World async lighting: false
+[04:55:18] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[04:55:18] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[04:55:18] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[04:55:18] [Server thread/INFO]: Mob Spawn Range: 4
+[04:55:18] [Server thread/INFO]: Anti X-Ray: true
+[04:55:18] [Server thread/INFO]: 	Engine Mode: 1
+[04:55:18] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[04:55:18] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[04:55:18] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[04:55:18] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Cane Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Melon Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[04:55:18] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[04:55:18] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[04:55:18] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[04:55:18] [Server thread/INFO]: Random Lighting Updates: false
+[04:55:18] [Server thread/INFO]: Structure Info Saving: true
+[04:55:18] [Server thread/INFO]: Sending up to 10 chunks per packet
+[04:55:18] [Server thread/INFO]: Max Entity Collisions: 8
+[04:55:18] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[04:55:18] [Server thread/INFO]: Max TNT Explosions: 100
+[04:55:18] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[04:55:18] [Server thread/INFO]: Item Despawn Rate: 6000
+[04:55:18] [Server thread/INFO]: Item Merge Radius: 2.5
+[04:55:18] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[04:55:18] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[04:55:18] [Server thread/INFO]: View Distance: 4
+[04:55:18] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[04:55:18] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[04:55:18] [Server thread/INFO]: Clear tick list: false
+[04:55:18] [Server thread/INFO]: Experience Merge Radius: 3.0
+[04:55:18] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[04:55:18] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[04:55:18] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[04:55:18] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[04:55:18] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[04:55:18] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[04:55:18] [Server thread/INFO]: Water over lava flow speed: 5
+[04:55:18] [Server thread/INFO]: Fix TNT cannons: false
+[04:55:18] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[04:55:18] [Server thread/INFO]: Keep spawn chunk loaded: true
+[04:55:18] [Server thread/INFO]: World async lighting: false
+[04:55:18] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[04:55:18] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[04:55:18] [Server thread/INFO]: Preparing start region for level 0 (Seed: -3930827945629396762)
+[04:55:19] [Server thread/INFO]: Preparing start region for level 1 (Seed: 3838229192924826437)
+[04:55:20] [Server thread/INFO]: Preparing spawn area: 26%
+[04:55:21] [Server thread/INFO]: Preparing spawn area: 63%
+[04:55:22] [Server thread/INFO]: Preparing start region for level 2 (Seed: 3838229192924826437)
+[04:55:23] [Server thread/INFO]: Preparing spawn area: 89%
+[04:55:23] [Server thread/INFO]: [ClearLag] Enabling ClearLag v3.2.2
+[04:55:23] [Server thread/INFO]: [ClearLag] Using version-adapter: LegacyVersionAdapter
+[04:55:23] [Server thread/INFO]: [ClearLag] Loading modules...
+[04:55:23] [Server thread/INFO]: [ClearLag] Modules enabed, loading config values
+[04:55:23] [Server thread/INFO]: [ClearLag] Modules have been loaded!
+[04:55:23] [Server thread/INFO]: [ClearLag] Clearlag is now enabled!
+[04:55:23] [Thread-6/INFO]: [ClearLag] Checking for updates compatible with your bukkit version [1.8]...
+[04:55:23] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v6.4
+[04:55:23] [Server thread/INFO]: [0;33;1m[21m[SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9[m
+
+[04:55:23] [Server thread/INFO]: [0;33;1m[21m[SimpleTpa] Simple Tpa has been enabled on version 6.4[m
+
+[04:55:23] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
+[04:55:23] [Server thread/INFO]: [SimpleHomes] Enabling SimpleHomes v2.2
+[04:55:23] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1;no_git_id
+[04:55:23] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[04:55:23] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_8_R3 as the Bukkit adapter
+[04:55:23] [Server thread/INFO]: [AdvancedBan] Enabling AdvancedBan v2.1.5-RELEASE
+[04:55:24] [Server thread/INFO]: checkpointClose start
+[04:55:24] [Server thread/INFO]: checkpointClose synched
+[04:55:24] [Server thread/INFO]: checkpointClose script done
+[04:55:24] [Server thread/INFO]: checkpointClose end
+[04:55:24] [Thread-6/INFO]: [ClearLag] No updates found!
+[04:55:24] [Server thread/INFO]: 
+ 
+[0;30;1m[]=====[[0;37;22mEnabling AdvancedBan[0;30;1m]=====[]
+[0;30;1m| [0;31;1mInformation:
+[0;30;1m|   [0;31;1mName: [0;37;22mAdvancedBan
+[0;30;1m|   [0;31;1mDeveloper: [0;37;22mLeoko
+[0;30;1m|   [0;31;1mVersion: [0;37;22m2.1.5-RELEASE
+[0;30;1m|   [0;31;1mStorage: [0;37;22mHSQLDB (local)
+[0;30;1m| [0;31;1mSupport:
+[0;30;1m|   [0;31;1mSkype: [0;37;22mLeoko33
+[0;30;1m|   [0;31;1mMail: [0;37;22mLeoko4433@gmail.com
+[0;30;1m|   [0;31;1mGithub: [0;37;22mhttps://github.com/DevLeoko/AdvancedBan/issues
+[0;30;1m|   [0;31;1mDiscord: [0;37;22mhttps://discord.gg/ycDG6rS
+[0;30;1m| [0;31;1mUpdate:
+[0;30;1m|   [0;37;22mThere is a new version available! [2.3.0]
+[0;30;1m[]================================[][m
+ [m
+
+[04:55:24] [Server thread/INFO]: [SetLobby] Enabling SetLobby v0.8
+[04:55:24] [Server thread/INFO]: [GreatLifeSteal] Enabling GreatLifeSteal v1.7
+[04:55:24] [Server thread/INFO]: 1 [Server thread] INFO GreatLifeSteal  - Using v1.8.8 version of the adapter.
+
+[04:55:24] [Server thread/INFO]: 147 [Server thread] INFO GreatLifeSteal  - Added the new heart item recipe.
+
+[04:55:24] [Server thread/INFO]: 148 [Server thread] WARN GreatLifeSteal  - PlaceholderAPI plugin has not been found, external placeholders will not work.
+
+[04:55:24] [Server thread/INFO]: 174 [Server thread] WARN GreatLifeSteal  - You are using an outdated version of the plugin!
+
+[04:55:24] [Server thread/INFO]: 175 [Server thread] WARN GreatLifeSteal  - You can download the latest one here:
+
+[04:55:24] [Server thread/INFO]: 175 [Server thread] WARN GreatLifeSteal  - https://www.spigotmc.org/resources/greatlifesteal.102206/
+
+[04:55:24] [Server thread/INFO]: [TAB] Enabling TAB v5.0.1
+[04:55:24] [Server thread/INFO]: [TAB] [0;37;22mLoaded NMS hook in 59ms[m
+
+[04:55:24] [Server thread/INFO]: [TAB] [0;32;1mEnabled in 136ms[m
+
+[04:55:24] [Server thread/INFO]: [Jail] Enabling Jail v3.0.0-SNAPSHOT-b182
+[04:55:24] [Server thread/INFO]: [Jail] Storage type selected: flatfile
+[04:55:24] [Server thread/INFO]: [Jail] Loaded the language: en
+[04:55:24] [Server thread/INFO]: [Jail] Loaded 0 jails.
+[04:55:24] [Server thread/INFO]: [Jail] Loaded 0 cells.
+[04:55:24] [Server thread/INFO]: [Jail] Loaded 0 prisoners.
+[04:55:24] [Server thread/INFO]: [Jail] Using the Bukkit Scheduler.
+[04:55:24] [Server thread/WARN]: [Jail] Can't have jail sticks without any jails.
+[04:55:24] [Server thread/INFO]: [Jail] Loaded 0 jail sticks.
+[04:55:24] [Server thread/INFO]: [Jail] Completed enablement.
+[04:55:24] [Server thread/INFO]: [Essentials] Enabling Essentials v2.19.7
+[04:55:24] [Server thread/INFO]: You are running a server with limited API functionality. EssentialsX will still work, but certain features may be disabled.
+[04:55:24] [Server thread/INFO]: Attempting to convert old kits in config.yml to new kits.yml
+[04:55:24] [Server thread/INFO]: No kits found to migrate.
+[04:55:25] [Server thread/INFO]: Loaded 853 items from items.csv.
+[04:55:25] [Server thread/INFO]: Using locale en
+[04:55:25] [Server thread/INFO]: ServerListPingEvent: Spigot iterator API
+[04:55:25] [Server thread/INFO]: Starting Metrics. Opt-out using the global bStats config.
+[04:55:25] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[04:55:25] [Server thread/INFO]: Using superperms-based permissions.
+[04:55:25] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-SNAPSHOT-bCUSTOM
+[04:55:25] [Server thread/INFO]: [AuthMe] SQLite Setup finished
+[04:55:25] [Server thread/INFO]: [AuthMe] Hooked into Vault!
+[04:55:25] [Server thread/INFO]: [AuthMe] Hooked successfully into Essentials
+[04:55:25] [Server thread/INFO]: [AuthMe] Essentials spawn file not found: '/workspaces/Nots-private-server/server/plugins/Essentials/spawn.yml'
+[04:55:25] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0-SNAPSHOT build n.CUSTOM successfully enabled!
+[04:55:25] [Server thread/WARN]: Could not register alias sell because it contains commands that do not exist: economyshopgui:sellall $1-
+[04:55:25] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:55:25] [Server thread/INFO]: Done (7.080s)! For help, type "help" or "?"
+[04:55:25] [Server thread/INFO]: Timings Reset
+[04:55:25] [Server thread/INFO]: Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[04:55:25] [Craft Scheduler Thread - 2/INFO]: §6Fetching version information...
+[04:55:25] [Craft Scheduler Thread - 4/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[04:55:25] [Craft Scheduler Thread - 1/INFO]: [Vault] Checking for Updates ... 
+[04:55:25] [Craft Scheduler Thread - 4/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[04:55:25] [Craft Scheduler Thread - 4/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[04:55:25] [Craft Scheduler Thread - 4/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[04:55:25] [Craft Scheduler Thread - 1/INFO]: [Vault] No new version available
+[04:55:25] [Craft Scheduler Thread - 0/INFO]: [0;31;1m[21m[SimpleTpa] There is a new update available.[m
+
+[04:55:25] [Craft Scheduler Thread - 0/INFO]: [0;31;1m[SimpleTpa] There is a new update available:[m
+
+[04:55:25] [Craft Scheduler Thread - 0/INFO]: [0;31;1m[SimpleTpa] https://www.spigotmc.org/resources/simple-tpa.64270/[m
+
+[04:55:26] [Craft Scheduler Thread - 2/WARN]: §4There is a new EssentialsX version available for download: §c2.21.0§4.
+[04:55:26] [Craft Scheduler Thread - 2/WARN]: §4Download it here:§c https://essentialsx.net/downloads.html?branch=stable
+[04:55:59] [Thread-9/INFO]: UUID of player 733402 is 226bc4a1-e5e8-3cde-af64-cdcc2f41350c
+[04:55:59] [TAB Processing Thread/INFO]: [0;31;1m[TAB] [WARN] Player 733402's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.[m
+
+[04:55:59] [Server thread/INFO]: 733402[/[0:0:0:0:0:0:0:1]:37250] logged in with entity id 230 at ([world]1927.0, 64.0, -719.0)
+[04:56:03] [Craft Scheduler Thread - 0/INFO]: [AuthMe] 733402 logged in 0:0:0:0:0:0:0:1
+[04:56:03] [Server thread/INFO]: [0;33;1m733402 joined the game[m
+
+[04:56:06] [Thread-10/INFO]: UUID of player 2cookie is 9a45de49-04fb-34aa-a7fd-bcf04f3b4838
+[04:56:06] [Server thread/INFO]: 2cookie[/[0:0:0:0:0:0:0:1]:42126] logged in with entity id 666 at ([world]1927.0, 64.0, -719.0)
+[04:56:06] [TAB Processing Thread/INFO]: [0;31;1m[TAB] [WARN] Player 2cookie's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.[m
+
+[04:56:12] [Craft Scheduler Thread - 0/INFO]: [AuthMe] 2cookie used the wrong password
+[04:56:12] [Server thread/INFO]: 2cookie lost connection: §cWrong password!
+[04:56:12] [Server thread/WARN]: handleDisconnection() called twice
+[04:56:14] [Thread-11/INFO]: UUID of player 2cookie is 9a45de49-04fb-34aa-a7fd-bcf04f3b4838
+[04:56:16] [TAB Processing Thread/INFO]: [0;31;1m[TAB] [WARN] Player 2cookie's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.[m
+
+[04:56:16] [Server thread/INFO]: 2cookie[/[0:0:0:0:0:0:0:1]:46402] logged in with entity id 1139 at ([world]1927.0, 64.0, -719.0)
+[04:56:18] [Craft Scheduler Thread - 0/INFO]: [AuthMe] 2cookie logged in 0:0:0:0:0:0:0:1
+[04:56:18] [Server thread/INFO]: [0;33;1m2cookie joined the game[m
+
+[04:56:20] [Server thread/INFO]: 733402 issued server command: /lobby
+[04:58:20] [Server thread/INFO]: 733402 lost connection: Disconnected
+[04:58:20] [Server thread/INFO]: 733402 left the game.
+[04:58:51] [Thread-12/INFO]: UUID of player 733402 is 226bc4a1-e5e8-3cde-af64-cdcc2f41350c
+[04:58:51] [Server thread/INFO]: 733402[/[0:0:0:0:0:0:0:1]:39636] logged in with entity id 2073 at ([world]1927.0, 64.0, -719.0)
+[04:58:51] [TAB Processing Thread/INFO]: [0;31;1m[TAB] [WARN] Player 733402's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.[m
+
+[04:58:51] [Craft Scheduler Thread - 0/INFO]: [AuthMe] 733402 logged in 0:0:0:0:0:0:0:1
+[04:58:51] [Server thread/INFO]: [0;33;1m733402 joined the game[m
+
+[04:59:06] [Server thread/INFO]: 733402 lost connection: Disconnected
+[04:59:06] [Server thread/INFO]: 733402 left the game.
+[04:59:11] [Thread-13/INFO]: UUID of player 733402 is 226bc4a1-e5e8-3cde-af64-cdcc2f41350c
+[04:59:11] [TAB Processing Thread/INFO]: [0;31;1m[TAB] [WARN] Player 733402's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.[m
+
+[04:59:11] [Server thread/INFO]: 733402[/[0:0:0:0:0:0:0:1]:37626] logged in with entity id 2170 at ([world]1927.0, 64.0, -719.0)
+[04:59:11] [Craft Scheduler Thread - 5/INFO]: [AuthMe] 733402 logged in 0:0:0:0:0:0:0:1
+[04:59:11] [Server thread/INFO]: [0;33;1m733402 joined the game[m
+
+[04:59:24] [Async Chat Thread - #0/INFO]: <[0;31;22m2cookie[m> thes shaders are fire lol[m
+
+[04:59:26] [Server thread/INFO]: 733402 lost connection: Disconnected
+[04:59:26] [Server thread/INFO]: 733402 left the game.
+[04:59:31] [Thread-14/INFO]: UUID of player 733402 is 226bc4a1-e5e8-3cde-af64-cdcc2f41350c
+[04:59:31] [TAB Processing Thread/INFO]: [0;31;1m[TAB] [WARN] Player 733402's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.[m
+
+[04:59:31] [Server thread/INFO]: 733402[/[0:0:0:0:0:0:0:1]:41348] logged in with entity id 2253 at ([world]1927.0, 64.0, -719.0)
+[04:59:31] [Craft Scheduler Thread - 0/INFO]: [AuthMe] 733402 logged in 0:0:0:0:0:0:0:1
+[04:59:32] [Server thread/INFO]: [0;33;1m733402 joined the game[m
+
+[04:59:37] [Async Chat Thread - #0/INFO]: <[0;31;22m733402[m> hi[m
+
+[05:01:34] [Server thread/INFO]: 2cookie issued server command: /teleport 2cookie 733402
+[05:02:33] [Server thread/INFO]: 733402 issued server command: /kill @e
+[05:02:37] [Server thread/INFO]: 733402 issued server command: /kill @
+[05:02:38] [Server thread/INFO]: 733402 issued server command: /kill
+[05:02:44] [Server thread/INFO]: 733402 issued server command: /kill **
+[05:02:44] [Server thread/INFO]: 2cookie died
+[05:02:44] [Server thread/INFO]: §4Owner§8: §f733402 died
+[05:02:51] [Server thread/INFO]: 733402 issued server command: /kill *
+[05:02:51] [Server thread/INFO]: §4Owner§8: §f733402 died
+[05:02:56] [Server thread/INFO]: 733402 issued server command: /kill *
+[05:02:56] [Server thread/INFO]: §4Owner§8: §f733402 died
+[05:03:04] [Server thread/INFO]: 733402 issued server command: /kick 2cookie lag
+[05:03:12] [Server thread/INFO]: 733402 issued server command: /deop 2cookie
+[05:03:12] [Server thread/INFO]: [733402: De-opped 2cookie]
+[05:03:14] [Server thread/INFO]: 733402 issued server command: /kick 2cookie lag
+[05:03:14] [Server thread/INFO]: 2cookie lost connection: §c§l733402`s Punishment system Lol §8§l» §7You got kicked
+§7
+§cReason §8» §7lag
+§7
+[05:03:14] [Server thread/INFO]: 2cookie left the game.
+[05:03:14] [Server thread/WARN]: handleDisconnection() called twice
+[05:03:24] [Server thread/INFO]: 733402 issued server command: /op 2cookie
+[05:03:24] [Server thread/INFO]: [733402: Opped 2cookie]
+[05:03:32] [Async Chat Thread - #1/INFO]: <[0;31;22m733402[m> t[m
+
+[05:03:51] [Server thread/INFO]: 733402 issued server command: /plugins
+[05:04:43] [Server thread/INFO]: CONSOLE: [0;31;1mPlease note that this command is not supported and may cause issues when using some plugins.[m
+
+[05:04:43] [Server thread/INFO]: CONSOLE: [0;31;1mIf you encounter any issues please use the /stop command to restart your server.[m
+
+[05:04:43] [Server thread/INFO]: Debug logging is disabled
+[05:04:43] [Server thread/INFO]: Spigot Timings: true - Verbose: true - Interval: 5m - Length: 60m
+[05:04:43] [Server thread/INFO]: Server Ping Player Sample Count: 12
+
+[05:04:43] [Server thread/INFO]: Using 4 threads for Netty based IO
+[05:04:43] [Server thread/INFO]: Data value allowed items: 
+[05:04:43] [Server thread/WARN]: java.lang.NoSuchFieldException: modifiers
+
+[05:04:43] [Server thread/WARN]: 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+
+[05:04:43] [Server thread/WARN]: 	at org.github.paperspigot.PaperSpigotConfig.stackableBuckets(PaperSpigotConfig.java:192)
+
+[05:04:43] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+
+[05:04:43] [Server thread/WARN]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+[05:04:43] [Server thread/WARN]: 	at org.github.paperspigot.PaperSpigotConfig.readConfig(PaperSpigotConfig.java:84)
+
+[05:04:43] [Server thread/WARN]: 	at org.github.paperspigot.PaperSpigotConfig.init(PaperSpigotConfig.java:62)
+
+[05:04:43] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.reload(CraftServer.java:716)
+
+[05:04:43] [Server thread/WARN]: 	at org.bukkit.Bukkit.reload(Bukkit.java:556)
+
+[05:04:43] [Server thread/WARN]: 	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:25)
+
+[05:04:43] [Server thread/WARN]: 	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:146)
+
+[05:04:43] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.dispatchCommand(CraftServer.java:666)
+
+[05:04:43] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.dispatchServerCommand(CraftServer.java:629)
+
+[05:04:43] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.DedicatedServer.aO(DedicatedServer.java:416)
+
+[05:04:43] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.DedicatedServer.B(DedicatedServer.java:379)
+
+[05:04:43] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.MinecraftServer.A(MinecraftServer.java:713)
+
+[05:04:43] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:616)
+
+[05:04:43] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[05:04:43] [Server thread/INFO]: -------- World Settings For [world] --------
+[05:04:43] [Server thread/INFO]: Mob Spawn Range: 4
+[05:04:43] [Server thread/INFO]: Anti X-Ray: true
+[05:04:43] [Server thread/INFO]: 	Engine Mode: 1
+[05:04:43] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[05:04:43] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[05:04:43] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[05:04:43] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Cane Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Melon Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[05:04:43] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[05:04:43] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[05:04:43] [Server thread/INFO]: Random Lighting Updates: false
+[05:04:43] [Server thread/INFO]: Structure Info Saving: true
+[05:04:43] [Server thread/INFO]: Sending up to 10 chunks per packet
+[05:04:43] [Server thread/INFO]: Max Entity Collisions: 8
+[05:04:43] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[05:04:43] [Server thread/INFO]: Max TNT Explosions: 100
+[05:04:43] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[05:04:43] [Server thread/INFO]: Item Despawn Rate: 6000
+[05:04:43] [Server thread/INFO]: Item Merge Radius: 2.5
+[05:04:43] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[05:04:43] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[05:04:43] [Server thread/INFO]: View Distance: 4
+[05:04:43] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[05:04:43] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[05:04:43] [Server thread/INFO]: Clear tick list: false
+[05:04:43] [Server thread/INFO]: Experience Merge Radius: 3.0
+[05:04:43] [Server thread/INFO]: -------- World Settings For [world] --------
+[05:04:43] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[05:04:43] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[05:04:43] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[05:04:43] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[05:04:43] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[05:04:43] [Server thread/INFO]: Water over lava flow speed: 5
+[05:04:43] [Server thread/INFO]: Fix TNT cannons: false
+[05:04:43] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[05:04:43] [Server thread/INFO]: Keep spawn chunk loaded: true
+[05:04:43] [Server thread/INFO]: World async lighting: false
+[05:04:43] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[05:04:43] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[05:04:43] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[05:04:43] [Server thread/INFO]: Mob Spawn Range: 4
+[05:04:43] [Server thread/INFO]: Anti X-Ray: true
+[05:04:43] [Server thread/INFO]: 	Engine Mode: 1
+[05:04:43] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[05:04:43] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[05:04:43] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[05:04:43] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Cane Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Melon Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[05:04:43] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[05:04:43] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[05:04:43] [Server thread/INFO]: Random Lighting Updates: false
+[05:04:43] [Server thread/INFO]: Structure Info Saving: true
+[05:04:43] [Server thread/INFO]: Sending up to 10 chunks per packet
+[05:04:43] [Server thread/INFO]: Max Entity Collisions: 8
+[05:04:43] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[05:04:43] [Server thread/INFO]: Max TNT Explosions: 100
+[05:04:43] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[05:04:43] [Server thread/INFO]: Item Despawn Rate: 6000
+[05:04:43] [Server thread/INFO]: Item Merge Radius: 2.5
+[05:04:43] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[05:04:43] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[05:04:43] [Server thread/INFO]: View Distance: 4
+[05:04:43] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[05:04:43] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[05:04:43] [Server thread/INFO]: Clear tick list: false
+[05:04:43] [Server thread/INFO]: Experience Merge Radius: 3.0
+[05:04:43] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[05:04:43] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[05:04:43] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[05:04:43] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[05:04:43] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[05:04:43] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[05:04:43] [Server thread/INFO]: Water over lava flow speed: 5
+[05:04:43] [Server thread/INFO]: Fix TNT cannons: false
+[05:04:43] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[05:04:43] [Server thread/INFO]: Keep spawn chunk loaded: true
+[05:04:43] [Server thread/INFO]: World async lighting: false
+[05:04:43] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[05:04:43] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[05:04:43] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[05:04:43] [Server thread/INFO]: Mob Spawn Range: 4
+[05:04:43] [Server thread/INFO]: Anti X-Ray: true
+[05:04:43] [Server thread/INFO]: 	Engine Mode: 1
+[05:04:43] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[05:04:43] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[05:04:43] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[05:04:43] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Cane Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Melon Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[05:04:43] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[05:04:43] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[05:04:43] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[05:04:43] [Server thread/INFO]: Random Lighting Updates: false
+[05:04:43] [Server thread/INFO]: Structure Info Saving: true
+[05:04:43] [Server thread/INFO]: Sending up to 10 chunks per packet
+[05:04:43] [Server thread/INFO]: Max Entity Collisions: 8
+[05:04:43] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[05:04:43] [Server thread/INFO]: Max TNT Explosions: 100
+[05:04:43] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[05:04:43] [Server thread/INFO]: Item Despawn Rate: 6000
+[05:04:43] [Server thread/INFO]: Item Merge Radius: 2.5
+[05:04:43] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[05:04:43] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[05:04:43] [Server thread/INFO]: View Distance: 4
+[05:04:43] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[05:04:43] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[05:04:43] [Server thread/INFO]: Clear tick list: false
+[05:04:43] [Server thread/INFO]: Experience Merge Radius: 3.0
+[05:04:43] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[05:04:43] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[05:04:43] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[05:04:43] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[05:04:43] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[05:04:43] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[05:04:43] [Server thread/INFO]: Water over lava flow speed: 5
+[05:04:43] [Server thread/INFO]: Fix TNT cannons: false
+[05:04:43] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[05:04:43] [Server thread/INFO]: Keep spawn chunk loaded: true
+[05:04:43] [Server thread/INFO]: World async lighting: false
+[05:04:43] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[05:04:43] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[05:04:43] [Server thread/INFO]: [AuthMe] Disabling AuthMe v5.6.0-SNAPSHOT-bCUSTOM
+[05:04:43] [Server thread/INFO]: [AuthMe] Waiting for 0 tasks to finish
+[05:04:43] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0-SNAPSHOT-bCUSTOM disabled!
+[05:04:43] [Server thread/INFO]: Disabling Essentials v2.19.7
+[05:04:43] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
+[05:04:43] [Server thread/ERROR]: There's a good chance you're reloading your server right now. If that's the case, why do you hate yourself? Expect no support from the EssentialsX team when using /reload.
+[05:04:43] [Server thread/INFO]: [Jail] Disabling Jail v3.0.0-SNAPSHOT-b182
+[05:04:43] [Server thread/INFO]: [TAB] Disabling TAB v5.0.1
+[05:04:43] [Server thread/INFO]: [TAB] [0;32;1mDisabled in 2ms[m
+
+[05:04:43] [Server thread/INFO]: [GreatLifeSteal] Disabling GreatLifeSteal v1.7
+[05:04:43] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[05:04:43] [Server thread/INFO]: [SetLobby] Disabling SetLobby v0.8
+[05:04:43] [Server thread/INFO]: [AdvancedBan] Disabling AdvancedBan v2.1.5-RELEASE
+[05:04:43] [Server thread/INFO]: Database closed
+[05:04:43] [Server thread/INFO]: 
+ 
+[0;30;1m[]=====[[0;37;22mDisabling AdvancedBan[0;30;1m]=====[]
+[0;30;1m| [0;31;1mInformation:
+[0;30;1m|   [0;31;1mName: [0;37;22mAdvancedBan
+[0;30;1m|   [0;31;1mDeveloper: [0;37;22mLeoko
+[0;30;1m|   [0;31;1mVersion: [0;37;22m2.1.5-RELEASE
+[0;30;1m|   [0;31;1mStorage: [0;37;22mHSQLDB (local)
+[0;30;1m| [0;31;1mSupport:
+[0;30;1m|   [0;31;1mSkype: [0;37;22mLeoko33
+[0;30;1m|   [0;31;1mMail: [0;37;22mLeoko4433@gmail.com
+[0;30;1m|   [0;31;1mGithub: [0;37;22mhttps://github.com/DevLeoko/AdvancedBan/issues
+[0;30;1m|   [0;31;1mDiscord: [0;37;22mhttps://discord.gg/ycDG6rS
+[0;30;1m[]================================[][m
+ [m
+
+[05:04:43] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1;no_git_id
+[05:04:43] [Server thread/INFO]: [SimpleHomes] Disabling SimpleHomes v2.2
+[05:04:43] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v6.4
+[05:04:43] [Server thread/INFO]: [0;36;1m[21m[SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9[m
+
+[05:04:43] [Server thread/INFO]: [0;36;1m[21m[SimpleTpa] Simple Tpa has been disabled on version 6.4[m
+
+[05:04:43] [Server thread/INFO]: [ClearLag] Disabling ClearLag v3.2.2
+[05:04:43] [Server thread/INFO]: [ClearLag] Clearlag is now disabled!
+[05:04:43] [Server thread/INFO]: [SimpleTpa] Loading SimpleTpa v6.4
+[05:04:43] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1;no_git_id
+[05:04:43] [Server thread/INFO]: [GreatLifeSteal] Loading GreatLifeSteal v1.7
+[05:04:43] [Server thread/INFO]: [ServerBackup] Loading ServerBackup v2.9.7
+[05:04:43] [Server thread/INFO]: [ClearLag] Loading ClearLag v3.2.2
+[05:04:43] [Server thread/INFO]: [SimpleHomes] Loading SimpleHomes v2.2
+[05:04:43] [Server thread/INFO]: [AdvancedBan] Loading AdvancedBan v2.1.5-RELEASE
+[05:04:43] [Server thread/INFO]: [SetLobby] Loading SetLobby v0.8
+[05:04:43] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
+[05:04:43] [Server thread/INFO]: [Essentials] Loading Essentials v2.19.7
+[05:04:43] [Server thread/INFO]: [AuthMe] Loading AuthMe v5.6.0-SNAPSHOT-bCUSTOM
+[05:04:43] [Server thread/INFO]: [TAB] Loading TAB v5.0.1
+[05:04:43] [Server thread/INFO]: [Jail] Loading Jail v3.0.0-SNAPSHOT-b182
+[05:04:43] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[05:04:43] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[05:04:43] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[05:04:43] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[05:04:43] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v6.4
+[05:04:43] [Server thread/INFO]: [0;33;1m[21m[SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9[m
+
+[05:04:43] [Server thread/INFO]: [0;33;1m[21m[SimpleTpa] Simple Tpa has been enabled on version 6.4[m
+
+[05:04:43] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
+[05:04:43] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1;no_git_id
+[05:04:43] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[05:04:43] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_8_R3 as the Bukkit adapter
+[05:04:43] [Server thread/INFO]: [GreatLifeSteal] Enabling GreatLifeSteal v1.7
+[05:04:43] [Server thread/INFO]: 0 [Server thread] INFO GreatLifeSteal  - Using v1.8.8 version of the adapter.
+
+[05:04:43] [Server thread/INFO]: 67 [Server thread] INFO GreatLifeSteal  - Added the new heart item recipe.
+
+[05:04:43] [Server thread/INFO]: 67 [Server thread] WARN GreatLifeSteal  - PlaceholderAPI plugin has not been found, external placeholders will not work.
+
+[05:04:43] [Server thread/INFO]: 134 [Server thread] WARN GreatLifeSteal  - You are using an outdated version of the plugin!
+
+[05:04:43] [Server thread/INFO]: 134 [Server thread] WARN GreatLifeSteal  - You can download the latest one here:
+
+[05:04:43] [Server thread/INFO]: 134 [Server thread] WARN GreatLifeSteal  - https://www.spigotmc.org/resources/greatlifesteal.102206/
+
+[05:04:43] [Server thread/INFO]: [ServerBackup] Enabling ServerBackup v2.9.7
+[05:04:43] [Server thread/INFO]: [ServerBackup] ServerBackup: Plugin enabled.
+[05:04:43] [Server thread/INFO]: [ServerBackup] ServerBackup: Searching for updates...
+[05:04:43] [Server thread/INFO]: [ClearLag] Enabling ClearLag v3.2.2
+[05:04:43] [Server thread/INFO]: [ClearLag] Using version-adapter: LegacyVersionAdapter
+[05:04:43] [Server thread/INFO]: [ClearLag] Loading modules...
+[05:04:43] [Server thread/INFO]: [ClearLag] Modules enabed, loading config values
+[05:04:43] [Server thread/INFO]: [ClearLag] Modules have been loaded!
+[05:04:43] [Server thread/INFO]: [ClearLag] Clearlag is now enabled!
+[05:04:43] [Thread-18/INFO]: [ClearLag] Checking for updates compatible with your bukkit version [1.8]...
+[05:04:43] [Server thread/INFO]: [SimpleHomes] Enabling SimpleHomes v2.2
+[05:04:43] [Server thread/INFO]: [AdvancedBan] Enabling AdvancedBan v2.1.5-RELEASE
+[05:04:43] [Thread-18/INFO]: [ClearLag] No updates found!
+[05:04:43] [Server thread/INFO]: 
+ 
+[0;30;1m[]=====[[0;37;22mEnabling AdvancedBan[0;30;1m]=====[]
+[0;30;1m| [0;31;1mInformation:
+[0;30;1m|   [0;31;1mName: [0;37;22mAdvancedBan
+[0;30;1m|   [0;31;1mDeveloper: [0;37;22mLeoko
+[0;30;1m|   [0;31;1mVersion: [0;37;22m2.1.5-RELEASE
+[0;30;1m|   [0;31;1mStorage: [0;37;22mHSQLDB (local)
+[0;30;1m| [0;31;1mSupport:
+[0;30;1m|   [0;31;1mSkype: [0;37;22mLeoko33
+[0;30;1m|   [0;31;1mMail: [0;37;22mLeoko4433@gmail.com
+[0;30;1m|   [0;31;1mGithub: [0;37;22mhttps://github.com/DevLeoko/AdvancedBan/issues
+[0;30;1m|   [0;31;1mDiscord: [0;37;22mhttps://discord.gg/ycDG6rS
+[0;30;1m| [0;31;1mUpdate:
+[0;30;1m|   [0;37;22mThere is a new version available! [2.3.0]
+[0;30;1m[]================================[][m
+ [m
+
+[05:04:43] [Server thread/INFO]: [SetLobby] Enabling SetLobby v0.8
+[05:04:43] [Server thread/INFO]: [Essentials] Enabling Essentials v2.19.7
+[05:04:43] [Server thread/INFO]: You are running a server with limited API functionality. EssentialsX will still work, but certain features may be disabled.
+[05:04:44] [Server thread/INFO]: Attempting to convert old kits in config.yml to new kits.yml
+[05:04:44] [Server thread/INFO]: No kits found to migrate.
+[05:04:44] [Server thread/INFO]: Loaded 853 items from items.csv.
+[05:04:44] [Server thread/INFO]: Using locale en
+[05:04:44] [Server thread/INFO]: ServerListPingEvent: Spigot iterator API
+[05:04:44] [Server thread/INFO]: Starting Metrics. Opt-out using the global bStats config.
+[05:04:44] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[05:04:44] [Server thread/INFO]: Using superperms-based permissions.
+[05:04:44] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-SNAPSHOT-bCUSTOM
+[05:04:44] [Server thread/INFO]: [AuthMe] SQLite Setup finished
+[05:04:44] [Server thread/INFO]: [AuthMe] Hooked into Vault!
+[05:04:44] [Server thread/INFO]: [AuthMe] Hooked successfully into Essentials
+[05:04:44] [Server thread/INFO]: [AuthMe] Essentials spawn file not found: '/workspaces/Nots-private-server/server/plugins/Essentials/spawn.yml'
+[05:04:44] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0-SNAPSHOT build n.CUSTOM successfully enabled!
+[05:04:44] [Server thread/INFO]: [TAB] Enabling TAB v5.0.1
+[05:04:44] [Server thread/INFO]: [TAB] [0;37;22mLoaded NMS hook in 19ms[m
+
+[05:04:44] [Server thread/INFO]: [0;31;1m[TAB] [WARN] Player 733402's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.[m
+
+[05:04:44] [Server thread/INFO]: [TAB] [0;32;1mEnabled in 105ms[m
+
+[05:04:44] [Server thread/INFO]: [Jail] Enabling Jail v3.0.0-SNAPSHOT-b182
+[05:04:44] [Server thread/INFO]: [Jail] Storage type selected: flatfile
+[05:04:44] [Server thread/INFO]: [Jail] Loaded the language: en
+[05:04:44] [Server thread/INFO]: [Jail] Loaded 0 jails.
+[05:04:44] [Server thread/INFO]: [Jail] Loaded 0 cells.
+[05:04:44] [Server thread/INFO]: [Jail] Loaded 0 prisoners.
+[05:04:44] [Server thread/INFO]: [Jail] Using the Bukkit Scheduler.
+[05:04:44] [Server thread/WARN]: [Jail] Can't have jail sticks without any jails.
+[05:04:44] [Server thread/INFO]: [Jail] Loaded 0 jail sticks.
+[05:04:44] [Server thread/INFO]: [Jail] Completed enablement.
+[05:04:44] [Server thread/WARN]: Could not register alias sell because it contains commands that do not exist: economyshopgui:sellall $1-
+[05:04:44] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[05:04:44] [Server thread/INFO]: CONSOLE: [0;32;1mReload complete.[m
+
+[05:04:44] [Server thread/INFO]: Timings Reset
+[05:04:44] [Server thread/INFO]: Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[05:04:44] [Craft Scheduler Thread - 8/INFO]: §6Fetching version information...
+[05:04:44] [Craft Scheduler Thread - 10/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[05:04:44] [Craft Scheduler Thread - 11/INFO]: [Vault] Checking for Updates ... 
+[05:04:44] [Craft Scheduler Thread - 10/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[05:04:44] [Craft Scheduler Thread - 10/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[05:04:44] [Craft Scheduler Thread - 10/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[05:04:44] [Craft Scheduler Thread - 11/INFO]: [Vault] No new version available
+[05:04:44] [Craft Scheduler Thread - 6/INFO]: [0;31;1m[21m[SimpleTpa] There is a new update available.[m
+
+[05:04:44] [Craft Scheduler Thread - 6/INFO]: [0;31;1m[SimpleTpa] There is a new update available:[m
+
+[05:04:44] [Craft Scheduler Thread - 6/INFO]: [0;31;1m[SimpleTpa] https://www.spigotmc.org/resources/simple-tpa.64270/[m
+
+[05:04:44] [Craft Scheduler Thread - 7/INFO]: [ServerBackup] ServerBackup: There is a newer version available - 2.10.0, you are on - 2.9.7
+[05:04:44] [Craft Scheduler Thread - 7/INFO]: [ServerBackup] ServerBackup: Downloading newest version...
+[05:04:45] [Craft Scheduler Thread - 8/WARN]: §4There is a new EssentialsX version available for download: §c2.21.0§4.
+[05:04:45] [Craft Scheduler Thread - 8/WARN]: §4Download it here:§c https://essentialsx.net/downloads.html?branch=stable
+[05:04:45] [Craft Scheduler Thread - 7/INFO]: [ServerBackup] ServerBackup: Download finished. Please reload the server to complete the update.
+[05:04:52] [Craft Scheduler Thread - 7/INFO]: [AuthMe] 733402 logged in 0:0:0:0:0:0:0:1
+[05:04:55] [Server thread/INFO]: 733402 issued server command: /backup
+[05:05:00] [Server thread/INFO]: 733402 issued server command: /backup create
+[05:05:07] [Server thread/INFO]: 733402 issued server command: /backup create
+[05:05:15] [Async Chat Thread - #2/INFO]: <[0;31;22m733402[m> help[m
+
+[05:05:21] [Server thread/INFO]: 733402 issued server command: /backup zip
+[05:05:38] [Server thread/INFO]: 733402 issued server command: /backup create world
+[05:05:38] [Craft Scheduler Thread - 8/INFO]: [ServerBackup] 
+[05:05:38] [Craft Scheduler Thread - 8/INFO]: [ServerBackup] ServerBackup | Start zipping...
+[05:05:38] [Craft Scheduler Thread - 8/INFO]: [ServerBackup] 
+[05:05:43] [Craft Scheduler Thread - 8/INFO]: [ServerBackup] 
+[05:05:43] [Craft Scheduler Thread - 8/INFO]: [ServerBackup] ServerBackup | Files zipped. [4760ms]
+[05:05:43] [Craft Scheduler Thread - 8/INFO]: [ServerBackup] 
+[05:05:43] [Craft Scheduler Thread - 8/INFO]: 
+
+Backup [world] zipped.
+Backup [world] saved.[m
+
+[05:05:50] [Server thread/INFO]: 733402 issued server command: /backup zip
+[05:05:53] [Server thread/INFO]: 733402 issued server command: /backup list
+[05:06:00] [Server thread/INFO]: 733402 issued server command: /backup zip Files
+[05:06:00] [Craft Scheduler Thread - 6/INFO]: [ServerBackup] 
+[05:06:00] [Craft Scheduler Thread - 6/INFO]: [ServerBackup] ServerBackup | Start zipping...
+[05:06:00] [Craft Scheduler Thread - 6/INFO]: [ServerBackup] 
+[05:06:00] [Craft Scheduler Thread - 6/INFO]: [ServerBackup] 
+[05:06:00] [Craft Scheduler Thread - 6/INFO]: [ServerBackup] ServerBackup | Files zipped. [21ms]
+[05:06:00] [Craft Scheduler Thread - 6/INFO]: [ServerBackup] 
+[05:06:07] [Server thread/INFO]: 733402 issued server command: /backup list
+[05:06:13] [Async Chat Thread - #2/INFO]: <[0;31;22m733402[m> Files.zip[m
+
+[05:06:48] [Server thread/INFO]: 733402 issued server command: /backup dropbox upload backup-2025-04-11~05-05-38-world.zip
+[05:06:48] [Craft Scheduler Thread - 6/WARN]: Exception in thread "Craft Scheduler Thread - 6" 
+[05:06:48] [Craft Scheduler Thread - 6/WARN]: org.apache.commons.lang.UnhandledException: Plugin ServerBackup v2.9.7 generated an exception while executing task 153
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:56)
+	at org.github.paperspigot.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:23)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.IllegalArgumentException: Bad 'key': can't be null
+	at com.dropbox.core.DbxAppInfo.checkKeyArg(DbxAppInfo.java:260)
+	at com.dropbox.core.DbxAppInfo.<init>(DbxAppInfo.java:42)
+	at de.seblii.serverbackup.utils.DropboxManager.uploadToDropbox(DropboxManager.java:49)
+	at de.seblii.serverbackup.commands.SBCommand.lambda$onCommand$8(SBCommand.java:561)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:59)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:53)
+	... 4 more
+
+[05:06:51] [Server thread/INFO]: 733402 issued server command: /backup dropbox upload backup-2025-04-11~05-05-38-world.zip
+[05:06:51] [Craft Scheduler Thread - 13/WARN]: Exception in thread "Craft Scheduler Thread - 13" 
+[05:06:51] [Craft Scheduler Thread - 13/WARN]: org.apache.commons.lang.UnhandledException: Plugin ServerBackup v2.9.7 generated an exception while executing task 154
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:56)
+	at org.github.paperspigot.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:23)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.IllegalArgumentException: Bad 'key': can't be null
+	at com.dropbox.core.DbxAppInfo.checkKeyArg(DbxAppInfo.java:260)
+	at com.dropbox.core.DbxAppInfo.<init>(DbxAppInfo.java:42)
+	at de.seblii.serverbackup.utils.DropboxManager.uploadToDropbox(DropboxManager.java:49)
+	at de.seblii.serverbackup.commands.SBCommand.lambda$onCommand$8(SBCommand.java:561)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:59)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:53)
+	... 4 more
+
+[05:06:55] [Server thread/INFO]: 733402 issued server command: /backup
+[05:06:57] [Thread-20/INFO]: UUID of player 2cookie is 9a45de49-04fb-34aa-a7fd-bcf04f3b4838
+[05:06:57] [TAB Processing Thread/INFO]: [0;31;1m[TAB] [WARN] Player 2cookie's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.[m
+
+[05:06:57] [Server thread/INFO]: 2cookie[/[0:0:0:0:0:0:0:1]:60842] logged in with entity id 2843 at ([world]1927.0, 64.0, -719.0)
+[05:06:57] [Craft Scheduler Thread - 10/INFO]: [AuthMe] 2cookie logged in 0:0:0:0:0:0:0:1
+[05:06:57] [Server thread/INFO]: [0;33;1m2cookie joined the game[m
+
+[05:07:02] [Server thread/INFO]: 733402 issued server command: /backup dropbox upload backup-2025-04-11~05-05-38-world.zip
+[05:07:02] [Craft Scheduler Thread - 14/WARN]: Exception in thread "Craft Scheduler Thread - 14" 
+[05:07:02] [Craft Scheduler Thread - 14/WARN]: org.apache.commons.lang.UnhandledException: Plugin ServerBackup v2.9.7 generated an exception while executing task 165
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:56)
+	at org.github.paperspigot.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:23)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.IllegalArgumentException: Bad 'key': can't be null
+	at com.dropbox.core.DbxAppInfo.checkKeyArg(DbxAppInfo.java:260)
+	at com.dropbox.core.DbxAppInfo.<init>(DbxAppInfo.java:42)
+	at de.seblii.serverbackup.utils.DropboxManager.uploadToDropbox(DropboxManager.java:49)
+	at de.seblii.serverbackup.commands.SBCommand.lambda$onCommand$8(SBCommand.java:561)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:59)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:53)
+	... 4 more
+
+[05:07:12] [Server thread/INFO]: 733402 issued server command: /backup dropbox upload Files.zip
+[05:07:12] [Craft Scheduler Thread - 17/WARN]: Exception in thread "Craft Scheduler Thread - 17" 
+[05:07:12] [Craft Scheduler Thread - 17/WARN]: org.apache.commons.lang.UnhandledException: Plugin ServerBackup v2.9.7 generated an exception while executing task 166
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:56)
+	at org.github.paperspigot.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:23)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.IllegalArgumentException: Bad 'key': can't be null
+	at com.dropbox.core.DbxAppInfo.checkKeyArg(DbxAppInfo.java:260)
+	at com.dropbox.core.DbxAppInfo.<init>(DbxAppInfo.java:42)
+	at de.seblii.serverbackup.utils.DropboxManager.uploadToDropbox(DropboxManager.java:49)
+	at de.seblii.serverbackup.commands.SBCommand.lambda$onCommand$8(SBCommand.java:561)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:59)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:53)
+	... 4 more
+
+[05:07:38] [Server thread/INFO]: 733402 lost connection: Disconnected
+[05:07:38] [Server thread/INFO]: 733402 left the game.
+[05:08:23] [Thread-21/INFO]: UUID of player 733402 is 226bc4a1-e5e8-3cde-af64-cdcc2f41350c
+[05:08:23] [TAB Processing Thread/INFO]: [0;31;1m[TAB] [WARN] Player 733402's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.[m
+
+[05:08:23] [Server thread/INFO]: 733402[/[0:0:0:0:0:0:0:1]:37674] logged in with entity id 3224 at ([world]1927.0, 64.0, -719.0)
+[05:08:24] [Craft Scheduler Thread - 15/INFO]: [AuthMe] 733402 logged in 0:0:0:0:0:0:0:1
+[05:08:24] [Server thread/INFO]: [0;33;1m733402 joined the game[m
+
+[05:08:25] [Server thread/INFO]: 2cookie lost connection: Disconnected
+[05:08:25] [Server thread/INFO]: 2cookie left the game.
+[05:08:29] [Thread-22/INFO]: UUID of player 2cookie is 9a45de49-04fb-34aa-a7fd-bcf04f3b4838
+[05:08:29] [Server thread/INFO]: 2cookie[/[0:0:0:0:0:0:0:1]:37688] logged in with entity id 3225 at ([world]1927.0, 64.0, -719.0)
+[05:08:29] [TAB Processing Thread/INFO]: [0;31;1m[TAB] [WARN] Player 2cookie's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.[m
+
+[05:08:29] [Craft Scheduler Thread - 10/INFO]: [AuthMe] 2cookie logged in 0:0:0:0:0:0:0:1
+[05:08:29] [Server thread/INFO]: [0;33;1m2cookie joined the game[m
+
+[05:08:35] [Server thread/INFO]: 733402 issued server command: /backup
+[05:08:39] [Server thread/INFO]: 733402 issued server command: /login
+[05:09:00] [Server thread/INFO]: 733402 issued server command: /backup dropbox upload Files.zip
+[05:09:00] [Craft Scheduler Thread - 10/WARN]: Exception in thread "Craft Scheduler Thread - 10" 
+[05:09:00] [Craft Scheduler Thread - 10/WARN]: org.apache.commons.lang.UnhandledException: Plugin ServerBackup v2.9.7 generated an exception while executing task 196
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:56)
+	at org.github.paperspigot.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:23)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.IllegalArgumentException: Bad 'key': can't be null
+	at com.dropbox.core.DbxAppInfo.checkKeyArg(DbxAppInfo.java:260)
+	at com.dropbox.core.DbxAppInfo.<init>(DbxAppInfo.java:42)
+	at de.seblii.serverbackup.utils.DropboxManager.uploadToDropbox(DropboxManager.java:49)
+	at de.seblii.serverbackup.commands.SBCommand.lambda$onCommand$8(SBCommand.java:561)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:59)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:53)
+	... 4 more
+
+[05:09:25] [Server thread/INFO]: 733402 issued server command: /backup
+[05:09:43] [Server thread/INFO]: 733402 issued server command: /backup ftp upload
+[05:10:13] [Server thread/INFO]: 2cookie lost connection: Timed out
+[05:10:13] [Server thread/INFO]: 2cookie left the game.
+[05:10:32] [Thread-24/INFO]: UUID of player 2cookie is 9a45de49-04fb-34aa-a7fd-bcf04f3b4838
+[05:10:32] [Server thread/INFO]: 2cookie[/[0:0:0:0:0:0:0:1]:43886] logged in with entity id 3435 at ([world]1927.0, 64.0, -719.0)
+[05:10:32] [TAB Processing Thread/INFO]: [0;31;1m[TAB] [WARN] Player 2cookie's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.[m
+
+[05:10:33] [Craft Scheduler Thread - 20/INFO]: [AuthMe] 2cookie logged in 0:0:0:0:0:0:0:1
+[05:10:33] [Server thread/INFO]: [0;33;1m2cookie joined the game[m
+
+[05:12:22] [Server thread/INFO]: 2cookie lost connection: Timed out
+[05:12:22] [Server thread/INFO]: 2cookie left the game.
+[05:15:28] [Server thread/INFO]: 733402 lost connection: Timed out
+[05:15:28] [Server thread/INFO]: 733402 left the game.
