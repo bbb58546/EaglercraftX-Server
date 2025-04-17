@@ -1,0 +1,109 @@
+MyAnimation1:
+  change-interval: 100
+  texts:
+    - '&d-&3--------------'
+    - '&3-&d-&3-------------'
+    - '&3--&d-&3------------'
+    - '&3---&d-&3-----------'
+    - '&3----&d-&3----------'
+    - '&3-----&d-&3---------'
+    - '&3------&d-&3--------'
+    - '&3-------&d-&3-------'
+    - '&3--------&d-&3------'
+    - '&3---------&d-&3-----'
+    - '&3----------&d-&3----'
+    - '&3-----------&d-&3---'
+    - '&3------------&d-&3--'
+    - '&3-------------&d-&3-'
+    - '&3--------------&d-'
+    - '&3-------------&d-&3-'
+    - '&3------------&d-&3--'
+    - '&3-----------&d-&3---'
+    - '&3----------&d-&3----'
+    - '&3---------&d-&3-----'
+    - '&3--------&d-&3------'
+    - '&3-------&d-&3-------'
+    - '&3------&d-&3--------'
+    - '&3-----&d-&3---------'
+    - '&3----&d-&3----------'
+    - '&3---&d-&3-----------'
+    - '&3--&d-&3------------'
+    - '&3-&d-&3-------------'
+    - '&d-&3--------------'
+ServerName:
+  change-interval: 300
+  texts:
+  - '&c&l733402 SMP'
+  - '&c&n&l733402 SMP'
+  - '&b&l733402 SMP'
+  - '&b&l&n733402 SMP'
+  - '&e&l733402 SMP'
+  - '&e&n&l733402 SMP'
+web:
+  change-interval: 200
+  texts:
+  - '&ewww.notsmp.ct.ws'
+  - '&ewww.notsmp.ct.ws'
+  - '&ewww.notsmp.ct.ws'
+  - '&ewww.notsmp.ct.ws'
+  - '&ewww.notsmp.ct.ws'
+  - '&ewww.notsmp.ct.ws'
+  - '&6w&eww.notsmp.ct.ws'
+  - '&ew&6w&ew.notsmp.ct.ws'
+  - '&eww&6w&e.notsmp.ct.ws'
+  - '&ewww&6.&enotsmp.ct.ws'
+  - '&ewww.&6n&eotsmp.ct.ws'
+  - '&ewww.n&6o&etsmp.ct.ws'
+  - '&ewww.not&6s&emp.ct.ws'
+  - '&ewww.nots&6m&ep.ct.ws'
+  - '&ewww.notsm&6p&e.ct.ws'
+  - '&ewww.notsmp&6.&ect.ws'
+  - '&ewww.notsmp.&6ct&e.ws'
+  - '&ewww.notsmp.c&6t&e.ws'
+  - '&ewww.notsmp.ct.w&6s'
+  - '&ewww.notsmp.ct.ws'
+  - '&ewww.notsmp.ct.ws'
+  - '&ewww.notsmp.ct.ws'
+  - '&ewww.notsmp.ct.ws'
+  - '&ewww.notsmp.ct.ws'
+  - '&ewww.notsmp.ct.ws'
+vote:
+  change-interval: 1000
+  texts:
+  - '&avote.domain.com'
+  - '&a&nvote.domain.com'
+  - '&5vote.domain.com'
+  - '&5&nvote.domain.com'
+Welcome:
+  change-interval: 400
+  texts:
+  - '&7&lW_'
+  - '&7&lW_'
+  - '&7&lWe_'
+  - '&7&lWel_'
+  - '&7&lWelc_'
+  - '&7&lWelco_'
+  - '&7&lWelcom_'
+  - '&7&lWelcome_'
+  - '&7&lWelcome_'
+  - '&7&lWelcome_'
+  - '&7&lWelcome_'
+  - '&7&lWelcom_'
+  - '&7&lWelco_'
+  - '&7&lWelc_'
+  - '&7&lWel_'
+  - '&7&lWe_'
+  - '&7&lW_'
+  - '&7&lW_'
+time:
+  change-interval: 3000
+  texts:
+    - '&7Time &b%time%'
+    - '&7Date &b%date%'
+barcolors:
+  change-interval: 1000
+  texts:
+    - RED
+    - BLUE
+    - GREEN
+    - YELLOW

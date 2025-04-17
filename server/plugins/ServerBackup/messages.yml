@@ -1,0 +1,48 @@
+# Use '&nl' to add a new line. Use '&' for color codes (e.g. '&4' for color red). For some messages you can use a placeholder (e.g. '%file%' for file name).
+# Minecraft color codes: https://htmlcolorcodes.com/minecraft-color-codes/
+Prefix: ''
+Command:
+  Zip:
+    Header: Zipping Backup...&nl
+    Footer: '&nl&nlBackup [%file%] zipped.&nlBackup [%file%] saved.'
+  Unzip:
+    Header: Unzipping Backup...&nl
+    Footer: '&nl&nlBackup [%file%] unzipped.'
+  Reload: Config reloaded.
+  Tasks:
+    Header: '----- Backup tasks -----&nl'
+    Footer: '&nl----- Backup tasks -----'
+  Shutdown:
+    Start: 'The server will shut down after backup tasks (check with: ''/backup tasks'')
+      are finished.&nlYou can cancel the shutdown by running this command again.'
+    Cancel: Shutdown canceled.
+Info:
+  BackupFinished: Backup [%file%] saved.
+  BackupStarted: Backup [%file%] started.
+  BackupRemoved: Backup [%file%] removed.
+  FtpUpload: 'Ftp: Uploading backup [%file%] ...'
+  FtpUploadSuccess: 'Ftp: Upload successfully. Backup stored on ftp server.'
+  FtpDownload: 'Ftp: Downloading backup [%file%] ...'
+  FtpDownloadSuccess: 'Ftp: Download successful. Backup downloaded from ftp server.'
+Error:
+  NoPermission: '&cI''m sorry but you do not have permission to perform this command.'
+  NoBackups: No backups found.
+  NoBackupFound: No Backup named '%file%' found.
+  NoBackupSearch: No backups for search argument '%input%' found.
+  DeletionFailed: Error while deleting '%file%'.
+  FolderExists: There is already a folder named '%file%'.
+  ZipExists: There is already a ZIP file named '%file%.zip'.
+  NoFtpBackups: No ftp backups found.
+  NoTasks: No backup tasks are running.
+  AlreadyZip: '%file% is already a ZIP file.'
+  NotAZip: '%file% is not a ZIP file.'
+  NotANumber: '%input% is not a valid number.'
+  BackupFailed: An error occurred while saving Backup [%file%]. See console for more information.
+  FtpUploadFailed: 'Ftp: Error while uploading backup to ftp server. Check server
+    details in config.yml (ip, port, user, password).'
+  FtpDownloadFailed: 'Ftp: Error while downloading backup to ftp server. Check server
+    details in config.yml (ip, port, user, password).'
+  FtpLocalDeletionFailed: 'Ftp: Local backup deletion failed because the uploaded
+    file was not found on the ftp server. Try again.'
+  FtpNotFound: 'Ftp: ftp-backup %file% not found.'
+  FtpConnectionFailed: 'Ftp: Error while connecting to FTP server.'

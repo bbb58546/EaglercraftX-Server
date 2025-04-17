@@ -1,0 +1,159 @@
+# Check out the default config: https://github.com/Prunt/AutoAFK/blob/master/config.yml
+#
+# Disable plugin in listed worlds
+disabled-worlds:
+- 'afk_world'
+# List of messages you can edit
+messages:
+    # true - broadcasts AFK status updates to whole server
+    # false - doesn't broadcast any AFK status updates to anyone
+    # private - sends AFK status updates only to the player
+    broadcast: true
+    # Message sent when player is put into AFK mode
+    # Variables %player% and %displayname% are supported
+    afk-on: '&7%player% is now AFK!'
+    # Message sent when player is active againg
+    # Variables %player% and %displayname% are supported
+    afk-off: '&7%player% is now back!'
+    # Message sent after successful reload
+    reload: '&aConfiguration file reloaded!'
+    # Message sent when console can't use a command
+    no-console: '&cThis command can only be used in-game.'
+    # Message sent when anti-spam blocks the usage of /afk command
+    # Variable %timeLeft% is supported
+    anti-spam: '&cYou need to wait another %timeLeft% seconds before using this command again.'
+    # Message sent when move protection is enabled
+    move-protection: '&cYou can''t move when you''re in AFK mode. Please use /afk to exit AFK mode.'
+    # Message sent when teleport location was successfully saved
+    location-set: '&aTeleport location saved!'
+    # Message send when player was teleported due to AFK
+    teleport: '&cYou were teleported to safety because you were in AFK mode for too long.' 
+# Anti /afk spam options (doesn't affect automatic AFK mode)
+anti-spam:
+    # Whether or not this feature is enabled
+    enabled: true
+    # Seconds required between /afk commands
+    cooldown: 60
+# Options for automatic AFK mode
+auto:
+    # Whether or not automatic AFK mode is enabled
+    # (AFK mode will still cancel if a player does something)
+    enabled: true
+    # Time in minutes after player is automatically put into AFK mode
+    time: 5
+# Options for automatic AFK teleport
+teleport:
+    # Whether or not players in AFK mode will be teleported somewhere
+    enabled: false
+    # Time in minutes player has to be in AFK mode in order to be automatically teleported (at least 1)
+    time: 5
+    # Location where to teleport the player (can be set using the command /autoafk set)
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    yaw: 0.0
+    pitch: 0.0
+    world: world
+# Options for automatic AFK kick
+kick:
+    # Whether or not automatic AFK kicking is enabled
+    enabled: true
+    # Whether or not to kick players only when server is full
+    onlywhenfull: false
+    # Time in minutes player has to be in AFK mode in order to be kicked (at least 1)
+    time: 10
+    # true - commands below are executed by console
+    # false - commands below are executed by the player
+    command-as-console: true
+    # List of commands that are executed when player is supposed to be kicked (without "/")
+    # Variable %player% is supported
+    commands: 
+      - 'kick %player% You were kicked for being AFK.'
+      - 'say %player% was kicked for AFK!'
+# Options for AFK player protection
+protection:
+    # Whether or not players in AFK mode should be protected from moving
+    move: false
+    # Whether or not players in AFK mode should be protected from taking damage
+    damage: false
+# Options to ignore AFK players for
+ignore:
+    # Whether or not players in AFK mode should be exempt from sleeping to skip the night
+    sleep: true
+    # Whether or not AFK messages for dead players should be ignored
+    dead: false
+# Options for tablist prefix
+tablist:
+    # By default, tablist prefix is enabled
+    enabled: true
+    # Prefix itself
+    prefix: '[AFK] '
+# Options for player tag
+playertag:
+    # By default, player tag prefix is disabled
+    enabled: false
+    # Prefix itself
+    prefix: '[AFK] '
+# Options for AFK particles - ParticleAPI REQUIRED FOR 1.8
+particles:
+    # By default, AFK particles are enabled
+    enabled: true
+    # Type of particles (1.9 and above): https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+    # List for 1.8: https://docs.inventivetalent.org/particleapi/
+    # Be sure to check if the particle exists in the version you use
+    type: CLOUD
+    # How many particles are created at once
+    count: 3
+# Options for automatic AFK and kick countdown - TitleAPI REQUIRED FOR 1.10 OR LOWER
+countdown:
+    # By default, countdown is enabled
+    enabled: true
+    # Title message sent on countdown (can be left empty: '')
+    # Variable %count% is supported
+    title: '&a&l%count%'
+    # Subtitle message sent on countdown (can be left empty: '')
+    # Variable %count% is supported
+    subtitle:
+        afk: '&bDo something or you will be put into AFK mode!'
+        kick: '&bDo something or you will be kicked from the server!'
+    # Sound used in countdown: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+    # Be sure to check if the sound exists in the version you use
+    sound: BLOCK_NOTE_BLOCK_PLING
+# Permission based auto/kick times
+# List is in priority order: first items override others if player has multiple permissions from this list
+# Name of the section is the ending of a permission required for it (autoafk.custom.x)
+permissions:
+    # In this example, the permisson is autoafk.custom.vip
+    vip:
+        # Time in minutes after player with perm autoafk.custom.vip is automatically put into AFK mode
+        auto: 10
+        # Time in minutes after AFK player with perm autoafk.custom.vip is teleported to predefined location
+        teleport: 5
+        # Time in minutes after AFK player with perm autoafk.custom.vip is kicked from server
+        kick: 10
+# Toggleable events which remove AFK from player
+listeners:
+    chat: true
+    interact:
+        entity: true
+        anything: true
+    bed-enter: true
+    world-change: true
+    book-edit: true
+    item:
+        drop: true
+        pickup: false
+        break: true
+    shear: true
+    toggle:
+        flight: true
+        sprint: true
+        sneak: false
+    unleash: true
+    bucket:
+        fill: true
+        empty: true
+    move: false
+    xp: false
+    commands: true
+    
