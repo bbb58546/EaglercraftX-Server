@@ -1,32 +1,49 @@
-# EaglerCraftX Server Setup
-## Introduction
-Eaglercraft is an open-source web-based minecraft copy. Today I will teach you how to setup a public server with plugins for free! Please note that the project is an old one, and is not being actively maintained anymore. Because of this, you should consider hosting the server on a system outside of your network. Some examples include OCI and Github Codespaces. Now, lets begin! 
+# Eaglercraft Server
 
-## System Setup (Linux)
-For this tutorial, we will be using Ubuntu 22.04 LTS. First of all, java is required to run bungeecord and the server file. To do this, we will need to run the following commands:
-<br>
-<br>
-`sudo apt install default-jdk && sudo apt install default-jre -y`
-<br>
-<br>
-## Installing The Server
-Now, we need to clone the server repo using `git`. Please run the following command:
-<br>
-<br>
-`git clone CaenJones/EaglercraftX-Server`
-<br>
-<br>
-Now, open 2 terminal tabs in the new server directory and paste in the following snipits:
-<br>
-<br>
-first tab: `cd server && sudo java -jar server.jar`
-<br>
-<br>
-second tab: `cd bungee && sudo java -jar bungee.jar`
-<br>
-<br>
-## Making Server Public
-Great! Now, you need to forward ports  `8081` and `25565` and navigate to your servers public ip [server-ip:8081]. The server welcome page should be displayed. Congrats on running your own server!
+This fork keeps the original legacy server files while adding a separate **Eaglercraft 26.2** setup path.
 
-## Installing Plugins
-In order to install plugins, navigate to `server > plugins`. You will need to clone the initial [plugin-name.jar] file as well as creating a separate directory in the plugins folder in order to store the additional data. Then just restart the server and the plugin should be running!
+## Eaglercraft 26.2 (new setup path)
+
+The new setup lives in `modern-26.2/` and uses **Paper 26.2 + EaglerXPaper**. It is separate from the older BungeeCord + EaglercraftXBungee setup.
+
+### Requirements
+
+- Java 25+
+- Python 3
+- Enough free disk space and RAM for the server
+- Read and comply with the Minecraft EULA
+
+### Setup
+
+From the repository root:
+
+```bash
+python3 modern-26.2/setup.py
+```
+
+On Windows:
+
+```bat
+py -3 modern-26.2\setup.py
+```
+
+The setup downloads pinned server files, verifies their SHA-256 checksums, and prepares `server-26.2/`. It does not download or bundle a browser client.
+
+Read https://aka.ms/MinecraftEULA. If you agree, change `eula=false` to `eula=true` in `server-26.2/eula.txt`.
+
+Start it with:
+
+- Linux/macOS: `sh modern-26.2/start-server.sh`
+- Windows: `modern-26.2\start-server.bat`
+
+The initial configuration binds to localhost and enables the whitelist. This is intentional: do not expose an offline-mode server publicly until appropriate authentication and access controls have been configured and tested. Add permitted players to the whitelist from the server console.
+
+See [modern-26.2/README.md](modern-26.2/README.md) for limitations and next steps.
+
+## Legacy server
+
+The existing `bungee/`, `server/`, and legacy scripts remain for the older EaglercraftX server setup. They have **not** been upgraded to 26.2 and should not be mixed with the new Paper 26.2 setup.
+
+## Status
+
+The 26.2 setup path is an initial migration scaffold. The downloaded files are checksum-pinned, but the server has not yet been launched or tested end-to-end in this repository. A compatible 26.2 browser client and a properly configured WebSocket endpoint are still needed for remote browser players.

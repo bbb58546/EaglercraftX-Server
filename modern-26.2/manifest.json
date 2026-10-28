@@ -1,0 +1,15 @@
+{
+  "minecraftVersion": "26.2",
+  "paper": {
+    "fileName": "paper-26.2-130.jar",
+    "sha256": "715cd6633db27b2c05ce6efd2d477330ebae8a4f668cf0459fcaf434c4720fba",
+    "url": "https://fill-data.papermc.io/v1/objects/715cd6633db27b2c05ce6efd2d477330ebae8a4f668cf0459fcaf434c4720fba/paper-26.2-130.jar"
+  },
+  "eaglerXPaper": {
+    "fileName": "EaglerXPaper.jar",
+    "sha256": "3373eae78985cf469e5906bbf1c34b0b86bddf444f4d4b5c9917b7472aba39d1",
+    "url": "https://github.com/PlanetDogeCodes/EaglerXPaper/releases/download/v1.1.1-S1/EaglerXPaper.v1-1-1.Stable1.jar"
+  },
+  "minimumJavaMajor": 25,
+  "serverPort": 25565
+}
